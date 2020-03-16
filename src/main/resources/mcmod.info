@@ -1,16 +1,16 @@
 [
 {
   "modid": "moegadd",
-  "name": "moegadd",
-  "description": "s",
+  "name": "MoegAddon",
+  "description": "Addon to modpack Terrafirma: Rescue",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["MoegTeam"],
-  "credits": "The Forge and FML guys, for making this example",
+  "credits": "Greg, MoegCraft",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": []
+  "dependencies": ["gregtech6"]
 }
 ]
