@@ -4,8 +4,8 @@ import item.ElectronicBase;
 
 public class ItemLoader {
 	public static item.Simpleresistance Simpleresistance=new item.Simpleresistance();
-	public static ElectronicBase PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
     public static ElectronicBase SeedCrytalSilicon = new ElectronicBase("SeedCrytalSilicon"); //硅籽晶
+	public static ElectronicBase PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
     public static ElectronicBase RawWafer = new ElectronicBase("RawWafer"); //待光刻晶元
     public static ElectronicBase Wafer30wm = new ElectronicBase("Wafer30wm");
     public static ElectronicBase Wafer20wm = new ElectronicBase("Wafer20wm");
