@@ -3,7 +3,6 @@ package Main;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import net.minecraft.item.Item;
 
 public class CommonProxy
 {

@@ -1,11 +1,13 @@
 package Main;
 
 import item.ElectronicBase;
+import net.minecraft.item.Item;
 
 public class ItemLoader {
-	public static item.Simpleresistance Simpleresistance=new item.Simpleresistance();
-    public static ElectronicBase SeedCrytalSilicon = new ElectronicBase("SeedCrytalSilicon"); //硅籽晶
-	public static ElectronicBase PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
+	public static final item.Simpleresistance Simpleresistance=new item.Simpleresistance();
+    public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
+	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
+
     public static ElectronicBase RawWafer = new ElectronicBase("RawWafer"); //待光刻晶元
     public static ElectronicBase Wafer30wm = new ElectronicBase("Wafer30wm");
     public static ElectronicBase Wafer20wm = new ElectronicBase("Wafer20wm");

@@ -11,7 +11,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class MoegAddon {
 	@SidedProxy(clientSide = "Main.ClientProxy", serverSide = "Main.CommonProxy")
     public static CommonProxy proxy;
-	 @EventHandler
+	 	@EventHandler
 	    public void preInit(FMLPreInitializationEvent event)
 	    {
 	        proxy.preInit(event);

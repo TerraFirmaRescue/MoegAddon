@@ -1,0 +1,6 @@
+item.Simpleresistance.name=简易电阻器
+item.SeedCrystalSilicon.name=硅籽晶
+item.PolycrystallineSilicon.name=多晶硅
+
+#CreativeTabs
+itemGroup.ElectronicTab=电子元件 | MoegAddon

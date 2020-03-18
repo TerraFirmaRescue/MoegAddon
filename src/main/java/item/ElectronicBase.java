@@ -7,9 +7,11 @@ import net.minecraft.item.Item;
 public class ElectronicBase extends Item {
 
     public ElectronicBase(String name) {
+        super();
         this.setCreativeTab(TabLoader.ElectronicTab);
-        this.setUnlocalizedName("moegaddon." + name);
+        this.setUnlocalizedName(name);
         this.setTextureName("moegadd:" + name);
         GameRegistry.registerItem(this, name);
     }
+
 }
