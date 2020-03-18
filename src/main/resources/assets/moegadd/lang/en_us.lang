@@ -1,0 +1,6 @@
+item.Simpleresistance.name=Simple Resistance
+item.SeedCrystalSilicon.name=Silicon Crystal Seed
+item.PolycrystallineSilicon.name=Polycrystalline Silicon
+
+#CreativeTabs
+itemGroup.ElectronicTab=Electronics | MoegAddon
