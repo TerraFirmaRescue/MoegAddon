@@ -18,9 +18,17 @@ public class ItemLoader {
 
     //Photomasks
     public static ElectronicBase PhotomaskWork = new ElectronicBase("PhotomaskWork"); //光学掩膜板
-    public static ElectronicBase PhotomaskControl = new ElectronicBase("PhotomaskControl");
     public static ElectronicBase PhotomaskCentral = new ElectronicBase("PhotomaskCentral");
-    public static ElectronicBase PhotomaskFilm = new ElectronicBase("PhotomaskFilm");
+
+    public static ElectronicBase PhotomaskControl1 = new ElectronicBase("PhotomaskControl1");
+    public static ElectronicBase PhotomaskControl2 = new ElectronicBase("PhotomaskControl2");
+    public static ElectronicBase PhotomaskControl3 = new ElectronicBase("PhotomaskControl3");
+    public static ElectronicBase PhotomaskControl4 = new ElectronicBase("PhotomaskControl4");
+
+    public static ElectronicBase PhotomaskFilm1 = new ElectronicBase("PhotomaskFilm1");
+    public static ElectronicBase PhotomaskFilm2 = new ElectronicBase("PhotomaskFilm2");
+    public static ElectronicBase PhotomaskFilm3 = new ElectronicBase("PhotomaskFilm3");
+    public static ElectronicBase PhotomaskFilm4 = new ElectronicBase("PhotomaskFilm4");
 
     //CPU
     public static ElectronicBase Wafer1wm                   = new ElectronicBase("Wafer1wm"); //光刻后晶元
@@ -117,16 +125,5 @@ public class ItemLoader {
     public static ElectronicBase Mainframe5  = new ElectronicBase("Mainframe5");
     public static ElectronicBase Mainframe6  = new ElectronicBase("Mainframe6");
     public static ElectronicBase Mainframe7  = new ElectronicBase("Mainframe7");
-
-    //MainframeClusters
-    /*
-    public static ElectronicBase MainframeCluster  = new ElectronicBase("MainframeCluster");
-    public static ElectronicBase MainframeCluster2  = new ElectronicBase("MainframeCluster2");
-    public static ElectronicBase MainframeCluster3  = new ElectronicBase("MainframeCluster3");
-    public static ElectronicBase MainframeCluster4  = new ElectronicBase("MainframeCluster4");
-    public static ElectronicBase MainframeCluster5  = new ElectronicBase("MainframeCluster5");
-    public static ElectronicBase MainframeCluster6  = new ElectronicBase("MainframeCluster6");
-    public static ElectronicBase MainframeCluster7  = new ElectronicBase("MainframeCluster7");
-    */
 
 }
