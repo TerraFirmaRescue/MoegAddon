@@ -11,6 +11,7 @@ public class CommonProxy
     {
 		TabLoader TabLoader=new TabLoader();
         ItemLoader ItemLoader =new ItemLoader();
+        BlockLoader BlockLoader = new BlockLoader();
     }
 
     public void init(FMLInitializationEvent event)

@@ -8,10 +8,15 @@ public class ItemLoader {
     public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
 	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
 
+    //一切的起源
     public static ElectronicBase RawWafer = new ElectronicBase( "RawWafer"); //待光刻晶元
+
+    //粗制的光刻后晶元
     public static ElectronicBase Wafer30wm = new ElectronicBase("Wafer30wm");
     public static ElectronicBase Wafer20wm = new ElectronicBase("Wafer20wm");
     public static ElectronicBase Wafer10wm = new ElectronicBase("Wafer10wm");
+
+    //Photomasks
     public static ElectronicBase PhotomaskWork = new ElectronicBase("PhotomaskWork"); //光学掩膜板
     public static ElectronicBase PhotomaskControl = new ElectronicBase("PhotomaskControl");
     public static ElectronicBase PhotomaskCentral = new ElectronicBase("PhotomaskCentral");
@@ -114,12 +119,14 @@ public class ItemLoader {
     public static ElectronicBase Mainframe7  = new ElectronicBase("Mainframe7");
 
     //MainframeClusters
-    public static ElectronicBase MainframeCluster1  = new ElectronicBase("MainframeCluster1");
+    /*
+    public static ElectronicBase MainframeCluster  = new ElectronicBase("MainframeCluster");
     public static ElectronicBase MainframeCluster2  = new ElectronicBase("MainframeCluster2");
     public static ElectronicBase MainframeCluster3  = new ElectronicBase("MainframeCluster3");
     public static ElectronicBase MainframeCluster4  = new ElectronicBase("MainframeCluster4");
     public static ElectronicBase MainframeCluster5  = new ElectronicBase("MainframeCluster5");
     public static ElectronicBase MainframeCluster6  = new ElectronicBase("MainframeCluster6");
     public static ElectronicBase MainframeCluster7  = new ElectronicBase("MainframeCluster7");
+    */
 
 }

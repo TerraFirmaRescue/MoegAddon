@@ -15,10 +15,10 @@ item.Wafer1wm.name=光刻后晶元(1微米工艺)
 item.Wafer200nm.name=光刻后晶元(200纳米工艺)
 item.Wafer60nm.name=光刻后晶元(60纳米工艺)
 item.Wafer20nm.name=光刻后晶元(20纳米工艺)
-item.SlightlyOxidizedWafer1wm  .name=初步氧化晶元(1微米工艺)
+item.SlightlyOxidizedWafer1wm.name=初步氧化晶元(1微米工艺)
 item.SlightlyOxidizedWafer200nm.name=初步氧化晶元(200纳米工艺)
-item.SlightlyOxidizedWafer60nm .name=初步氧化晶元(60纳米工艺)
-item.SlightlyOxidizedWafer20nm .name=初步氧化晶元(20纳米工艺)
+item.SlightlyOxidizedWafer60nm.name=初步氧化晶元(60纳米工艺)
+item.SlightlyOxidizedWafer20nm.name=初步氧化晶元(20纳米工艺)
 item.CleanedWafer1wm.name=待掺杂晶元(1微米工艺)
 item.CleanedWafer200nm.name=待掺杂晶元(200纳米工艺)
 item.CleanedWafer60nm.name=待掺杂晶元(60纳米工艺)
@@ -91,9 +91,9 @@ item.EpoxyPlate.name=环氧树脂板
 item.EpoxyCircuitBoard.name=环氧树脂电路基板
 item.FabricStrengthenedCircuitBoard.name=纤维强化电路基板
 item.BioCircuitBoard.name=生物神经电路基板
-item.BasicProcessorMainboard.name=基础电脑主板
-item.IntermediateProcessorMainboard.name=进阶电脑主板
-item.AdvancedProcessorMainboard.name=高级电脑主板
+item.BasicProcessorMainboard.name=低阶电脑主板
+item.IntermediateProcessorMainboard.name=中阶电脑主板
+item.AdvancedProcessorMainboard.name=高阶电脑主板
 
 item.Mainframe1.name=低级电脑主机
 item.Mainframe2.name=基础电脑主机
@@ -103,15 +103,15 @@ item.Mainframe5.name=精英电脑主机
 item.Mainframe6.name=究极电脑主机
 item.Mainframe7.name=终极电脑主机
 
-item.MainframeCluster1.name=低级巨型机
-item.MainframeCluster2.name=基础巨型机
-item.MainframeCluster3.name=进阶巨型机
-item.MainframeCluster4.name=高级巨型机
-item.MainframeCluster5.name=精英巨型机
-item.MainframeCluster6.name=究极巨型机
-item.MainframeCluster7.name=终极巨型机
+tile.MainframeCluster1.name=低级巨型机组件
+tile.MainframeCluster2.name=基础巨型机组件
+tile.MainframeCluster3.name=进阶巨型机组件
+tile.MainframeCluster4.name=高级巨型机组件
+tile.MainframeCluster5.name=精英巨型机组件
+tile.MainframeCluster6.name=究极巨型机组件
+tile.MainframeCluster7.name=终极巨型机组件
 
-tile.FlammableiceBlock.name=可燃冰
+tile.Flammableice.name=可燃冰
 
 #CreativeTabs
 itemGroup.ElectronicTab=电子元件 | MoegAddon
