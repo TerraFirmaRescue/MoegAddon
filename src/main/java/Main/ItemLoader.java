@@ -7,9 +7,10 @@ public class ItemLoader {
 	public static final item.Simpleresistance Simpleresistance=new item.Simpleresistance();
     public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
 	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
-
-    //一切的起源
-    public static ElectronicBase RawWafer = new ElectronicBase( "RawWafer"); //待光刻晶元
+    //简易系列
+	public static ElectronicBase Simpletransistor = new ElectronicBase( "Simpletransistor"); //简易电阻
+    //初始
+	public static ElectronicBase RawWafer = new ElectronicBase( "RawWafer"); //待光刻晶元
 
     //粗制的光刻后晶元
     public static ElectronicBase Wafer30wm = new ElectronicBase("Wafer30wm");
