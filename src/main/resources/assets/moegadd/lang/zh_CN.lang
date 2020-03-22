@@ -4,9 +4,17 @@ item.PolycrystallineSilicon.name=多晶硅
 item.RawWafer.name=待光刻晶元
 
 item.PhotomaskWork.name=工作光掩膜
-item.PhotomaskControl.name=控制光掩膜
-item.PhotomaskCentral.name=中间光掩膜
-item.PhotomaskFilm.name=格栅光掩膜
+item.PhotomaskCentral.name=中间光学掩膜板
+
+item.PhotomaskControl1.name=低阶控制光学掩膜板
+item.PhotomaskControl2.name=中阶控制光学掩膜板
+item.PhotomaskControl3.name=高阶控制光学掩膜板
+item.PhotomaskControl4.name=超阶控制光学掩膜板
+
+item.PhotomaskFilm1.name=低阶格栅光学掩膜板
+item.PhotomaskFilm2.name=中阶格栅光学掩膜板
+item.PhotomaskFilm3.name=高阶格栅光学掩膜板
+item.PhotomaskFilm4.name=超阶格栅光学掩膜板
 
 item.Wafer30wm.name=光刻后晶元(30微米工艺)
 item.Wafer20wm.name=光刻后晶元(20微米工艺)

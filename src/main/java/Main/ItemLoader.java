@@ -17,6 +17,8 @@ public class ItemLoader {
     public static ElectronicBase Wafer10wm = new ElectronicBase("Wafer10wm");
 
     //Photomasks
+    public static ElectronicBase PhotomaskRaw = new ElectronicBase("PhotomaskRaw");
+
     public static ElectronicBase PhotomaskWork = new ElectronicBase("PhotomaskWork"); //光学掩膜板
     public static ElectronicBase PhotomaskCentral = new ElectronicBase("PhotomaskCentral");
 
