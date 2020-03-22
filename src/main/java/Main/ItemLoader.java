@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 
 public class ItemLoader {
 	public static final item.Simpleresistance Simpleresistance=new item.Simpleresistance();
+	public static final item.SimpleCapacitance SIMPLE_CAPACITANCE = new item.SimpleCapacitance();
     public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
 	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
     //简易系列
