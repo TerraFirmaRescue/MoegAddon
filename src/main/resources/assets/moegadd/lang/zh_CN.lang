@@ -5,7 +5,7 @@ item.SeedCrystalSilicon.name=硅籽晶
 item.PolycrystallineSilicon.name=多晶硅
 item.RawWafer.name=待光刻晶元
 
-item.PhotomaskWork.name=工作光掩膜
+item.PhotomaskWork.name=工作光学掩膜板
 item.PhotomaskCentral.name=中间光学掩膜板
 
 item.PhotomaskControl1.name=低阶控制光学掩膜板
@@ -25,10 +25,6 @@ item.Wafer1wm.name=光刻后晶元(1微米工艺)
 item.Wafer200nm.name=光刻后晶元(200纳米工艺)
 item.Wafer60nm.name=光刻后晶元(60纳米工艺)
 item.Wafer20nm.name=光刻后晶元(20纳米工艺)
-item.SlightlyOxidizedWafer1wm.name=初步氧化晶元(1微米工艺)
-item.SlightlyOxidizedWafer200nm.name=初步氧化晶元(200纳米工艺)
-item.SlightlyOxidizedWafer60nm.name=初步氧化晶元(60纳米工艺)
-item.SlightlyOxidizedWafer20nm.name=初步氧化晶元(20纳米工艺)
 item.CleanedWafer1wm.name=待掺杂晶元(1微米工艺)
 item.CleanedWafer200nm.name=待掺杂晶元(200纳米工艺)
 item.CleanedWafer60nm.name=待掺杂晶元(60纳米工艺)

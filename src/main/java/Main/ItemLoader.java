@@ -39,10 +39,10 @@ public class ItemLoader {
     public static ElectronicBase Wafer200nm                 = new ElectronicBase("Wafer200nm");
     public static ElectronicBase Wafer60nm                  = new ElectronicBase("Wafer60nm");
     public static ElectronicBase Wafer20nm                  = new ElectronicBase("Wafer20nm");
-    public static ElectronicBase SlightlyOxidizedWafer1wm   = new ElectronicBase("SlightlyOxidizedWafer1wm"); //初步氧化晶元
-    public static ElectronicBase SlightlyOxidizedWafer200nm = new ElectronicBase("SlightlyOxidizedWafer200nm");
-    public static ElectronicBase SlightlyOxidizedWafer60nm  = new ElectronicBase("SlightlyOxidizedWafer60nm");
-    public static ElectronicBase SlightlyOxidizedWafer20nm  = new ElectronicBase("SlightlyOxidizedWafer20nm");
+    //public static ElectronicBase SlightlyOxidizedWafer1wm   = new ElectronicBase("SlightlyOxidizedWafer1wm"); //初步氧化晶元
+    //public static ElectronicBase SlightlyOxidizedWafer200nm = new ElectronicBase("SlightlyOxidizedWafer200nm");
+    //public static ElectronicBase SlightlyOxidizedWafer60nm  = new ElectronicBase("SlightlyOxidizedWafer60nm");
+    //public static ElectronicBase SlightlyOxidizedWafer20nm  = new ElectronicBase("SlightlyOxidizedWafer20nm");
     public static ElectronicBase CleanedWafer1wm            = new ElectronicBase("CleanedWafer1wm"); //待掺杂晶元（洁净晶元）
     public static ElectronicBase CleanedWafer200nm          = new ElectronicBase("CleanedWafer200nm");
     public static ElectronicBase CleanedWafer60nm           = new ElectronicBase("CleanedWafer60nm");
