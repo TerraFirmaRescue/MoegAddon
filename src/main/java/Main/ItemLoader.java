@@ -130,4 +130,6 @@ public class ItemLoader {
     public static ElectronicBase Mainframe6  = new ElectronicBase("Mainframe6");
     public static ElectronicBase Mainframe7  = new ElectronicBase("Mainframe7");
 
+    public static ElectronicBase StarPlatinum = new ElectronicBase("StarPlatinum");
+
 }

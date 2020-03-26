@@ -5,6 +5,7 @@ item.SeedCrystalSilicon.name=硅籽晶
 item.PolycrystallineSilicon.name=多晶硅
 item.RawWafer.name=待光刻晶元
 
+item.PhotomaskRaw.name=光学掩模版基板
 item.PhotomaskWork.name=工作光学掩膜板
 item.PhotomaskCentral.name=中间光学掩膜板
 
@@ -108,6 +109,8 @@ item.Mainframe4.name=高级电脑主机
 item.Mainframe5.name=精英电脑主机
 item.Mainframe6.name=究极电脑主机
 item.Mainframe7.name=终极电脑主机
+
+item.StarPlatinum.name=白金之星
 
 tile.MainframeCluster1.name=低级巨型机组件
 tile.MainframeCluster2.name=基础巨型机组件

@@ -5,7 +5,8 @@ item.SeedCrystalSilicon.name=Seed Crystal Silicon
 item.PolycrystallineSilicon.name=Poly Crystalline Silicon
 item.RawWafer.name=Raw Wafer
 
-item.PhotomaskWork.name=Working Photomask 
+item.PhotomaskRaw.name=Raw Photomask
+item.PhotomaskWork.name=Working Photomask
 item.PhotomaskCentral.name=Central Photomask
 
 item.PhotomaskControl1.name=Low Tier Control Photomask
@@ -108,6 +109,8 @@ item.Mainframe4.name=Mainframe Level 4
 item.Mainframe5.name=Mainframe Level 5
 item.Mainframe6.name=Mainframe Level 6
 item.Mainframe7.name=Mainframe Level 7
+
+item.StarPlatinum.name=Star Platinum
 
 tile.MainframeCluster1.name=Mainframe Cluster Level 1
 tile.MainframeCluster2.name=Mainframe Cluster Level 2
