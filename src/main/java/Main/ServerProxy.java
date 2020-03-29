@@ -4,9 +4,11 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-public class CommonProxy
-{
+import gregapi.api.Abstract_Proxy;
 
+public class ServerProxy extends Abstract_Proxy
+{
+/*
 	public void preInit(FMLPreInitializationEvent event)
     {
 		TabLoader TabLoader=new TabLoader();
@@ -23,4 +25,5 @@ public class CommonProxy
     {
 
     }
+    */
 }

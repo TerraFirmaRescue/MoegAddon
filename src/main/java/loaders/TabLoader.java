@@ -1,4 +1,4 @@
-package Main;
+package loaders;
 
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import creativetabs.ElectronicTab;

@@ -1,31 +1,110 @@
+/**
+ * Copyright (c) 2020 GregTech-6 Team
+ *
+ * This file is part of GregTech.
+ *
+ * GregTech is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * GregTech is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with GregTech. If not, see <http://www.gnu.org/licenses/>.
+ */
+
 package Main;
 
-import cpw.mods.fml.common.Mod;
-import cpw.mods.fml.common.Mod.EventHandler;
-import cpw.mods.fml.common.SidedProxy;
-import cpw.mods.fml.common.event.FMLInitializationEvent;
-import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import loaders.BlockLoader;
+import loaders.ItemLoader;
+import loaders.TabLoader;
 
-@Mod(modid="moegadd", name="MoegAddon", version="0.1")
-public class MoegAddon {
-	@SidedProxy(clientSide = "Main.ClientProxy", serverSide = "Main.CommonProxy")
-    public static CommonProxy proxy;
-	 	@EventHandler
-	    public void preInit(FMLPreInitializationEvent event)
-	    {
-	        proxy.preInit(event);
-	    }
+/**
+ * @author Your Name Here, also might be worth replacing that automatically generated Copyright notice with your LPGL compatible License/Name instead of mine.
+ *
+ * An example implementation for a Mod using my System. Copy and rename this File into your source Directory.
+ *
+ * If you have ANY Problems with the examples here, then you can contact me on the Forums or IRC.
+ *
+ * You may ask yourself why there are no imports on this File.
+ * I decided to do that, so Beginners cannot mess up by choosing wrong imports when they copy and paste Stuff.
+ * Also I avoided creating Variables, because people tend to copy them over for no reason, because they don't understand what they were for, and that they could be removed easily.
+ *
+ * Note: it is important to load after "gregapi_post".
+ *
+ * Note: There are NO TEXTURES contained in GT that correspond to the Examples. Those you will have to do or copy them yourself.
+ *
+ * uncomment the @cpw.mods.fml.common.Mod-Annotation for actual usage.
+ */
+@cpw.mods.fml.common.Mod(modid=MoegAddon.MOD_ID, name=MoegAddon.MOD_NAME, version=MoegAddon.VERSION, dependencies="required-after:gregapi_post")
+public final class MoegAddon extends gregapi.api.Abstract_Mod {
+	/** Your Mod-ID has to be LOWERCASE and without Spaces. Uppercase Chars and Spaces can create problems with Resource Packs. This is a vanilla forge "Issue". */
+	public static final String MOD_ID = "moegadd";
+	/** This is your Mods Name */
+	public static final String MOD_NAME = "MoegAddon";
+	/** This is your Mods Version */
+	public static final String VERSION = "1.03";
+	/** Contains a ModData Object for ID and Name. Doesn't have to be changed. */
+	public static gregapi.code.ModData MOD_DATA = new gregapi.code.ModData(MOD_ID, MOD_NAME);
 
-	    @EventHandler
-	    public void init(FMLInitializationEvent event)
-	    {
-	        proxy.init(event);
-	    }
+	@cpw.mods.fml.common.SidedProxy(modId = MOD_ID, clientSide = "Main.ClientProxy", serverSide = "Main.ServerProxy")
+	public static gregapi.api.Abstract_Proxy PROXY;
 
-	    @EventHandler
-	    public void postInit(FMLPostInitializationEvent event)
-	    {
-	        proxy.postInit(event);
-	    }
+	@Override public String getModID() {return MOD_ID;}
+	@Override public String getModName() {return MOD_NAME;}
+	@Override public String getModNameForLog() {return "MoegAddon";}
+	@Override public gregapi.api.Abstract_Proxy getProxy() {return PROXY;}
+
+	// Do not change these 7 Functions. Just keep them this way.
+	@cpw.mods.fml.common.Mod.EventHandler public final void onPreLoad           (cpw.mods.fml.common.event.FMLPreInitializationEvent    aEvent) {onModPreInit(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onLoad              (cpw.mods.fml.common.event.FMLInitializationEvent       aEvent) {onModInit(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onPostLoad          (cpw.mods.fml.common.event.FMLPostInitializationEvent   aEvent) {onModPostInit(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onServerStarting    (cpw.mods.fml.common.event.FMLServerStartingEvent       aEvent) {onModServerStarting(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onServerStarted     (cpw.mods.fml.common.event.FMLServerStartedEvent        aEvent) {onModServerStarted(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onServerStopping    (cpw.mods.fml.common.event.FMLServerStoppingEvent       aEvent) {onModServerStopping(aEvent);}
+	@cpw.mods.fml.common.Mod.EventHandler public final void onServerStopped     (cpw.mods.fml.common.event.FMLServerStoppedEvent        aEvent) {onModServerStopped(aEvent);}
+
+	@Override
+	public void onModPreInit2(cpw.mods.fml.common.event.FMLPreInitializationEvent aEvent) {
+
+		TabLoader TabLoader=new TabLoader();
+		ItemLoader ItemLoader =new ItemLoader();
+		BlockLoader BlockLoader = new BlockLoader();
+
 	}
+
+
+	@Override
+	public void onModInit2(cpw.mods.fml.common.event.FMLInitializationEvent aEvent) {
+
+	}
+
+	@Override
+	public void onModPostInit2(cpw.mods.fml.common.event.FMLPostInitializationEvent aEvent) {
+		// Insert your PostInit Code here and not above
+	}
+
+	@Override
+	public void onModServerStarting2(cpw.mods.fml.common.event.FMLServerStartingEvent aEvent) {
+		// Insert your ServerStarting Code here and not above
+	}
+
+	@Override
+	public void onModServerStarted2(cpw.mods.fml.common.event.FMLServerStartedEvent aEvent) {
+		// Insert your ServerStarted Code here and not above
+	}
+
+	@Override
+	public void onModServerStopping2(cpw.mods.fml.common.event.FMLServerStoppingEvent aEvent) {
+		// Insert your ServerStopping Code here and not above
+	}
+
+	@Override
+	public void onModServerStopped2(cpw.mods.fml.common.event.FMLServerStoppedEvent aEvent) {
+		// Insert your ServerStopped Code here and not above
+	}
+}

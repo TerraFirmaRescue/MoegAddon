@@ -1,4 +1,4 @@
-package Main;
+package loaders;
 
 import item.ElectronicBase;
 import net.minecraft.item.Item;

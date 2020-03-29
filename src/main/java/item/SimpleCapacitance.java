@@ -1,6 +1,6 @@
 package item;
 
-import Main.TabLoader;
+import loaders.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 

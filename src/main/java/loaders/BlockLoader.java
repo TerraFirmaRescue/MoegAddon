@@ -1,4 +1,4 @@
-package Main;
+package loaders;
 
 import block.*;
 

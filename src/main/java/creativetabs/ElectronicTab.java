@@ -1,7 +1,6 @@
 package creativetabs;
 
-import Main.CommonProxy;
-import Main.ItemLoader;
+import loaders.ItemLoader;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 

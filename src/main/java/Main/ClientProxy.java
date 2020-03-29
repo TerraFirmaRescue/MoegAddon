@@ -4,23 +4,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-public class ClientProxy extends CommonProxy{
-	@Override
-    public void preInit(FMLPreInitializationEvent event)
-    {
-        super.preInit(event);
-    }
+import gregapi.api.Abstract_Proxy;
 
-    @Override
-    public void init(FMLInitializationEvent event)
-    {
-        super.init(event);
-    }
-
-    @Override
-    public void postInit(FMLPostInitializationEvent event)
-    {
-        super.postInit(event);
-    }
+public final class ClientProxy extends Abstract_Proxy {
+    // Insert your Clientside-only implementation of Stuff here
 }
-
