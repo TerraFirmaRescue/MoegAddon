@@ -1,6 +1,6 @@
 package creativetabs;
 
-import loaders.ItemLoader;
+import loaders.Loader_Simple_Items;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -12,6 +12,6 @@ public class BlockTab extends CreativeTabs {
 
     public Item getTabIconItem()
     {
-        return ItemLoader.Simpleresistance;
+        return Loader_Simple_Items.Simpleresistance;
     }
 }

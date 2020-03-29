@@ -11,9 +11,9 @@ public class ServerProxy extends Abstract_Proxy
 /*
 	public void preInit(FMLPreInitializationEvent event)
     {
-		TabLoader TabLoader=new TabLoader();
-        ItemLoader ItemLoader =new ItemLoader();
-        BlockLoader BlockLoader = new BlockLoader();
+		Loader_M_CreativeTabs Loader_M_CreativeTabs=new Loader_M_CreativeTabs();
+        Loader_Simple_Items Loader_Simple_Items =new Loader_Simple_Items();
+        Loader_Simple_Blocks Loader_Simple_Blocks = new Loader_Simple_Blocks();
     }
 
     public void init(FMLInitializationEvent event)

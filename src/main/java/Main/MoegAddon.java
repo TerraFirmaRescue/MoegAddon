@@ -19,9 +19,9 @@
 
 package Main;
 
-import loaders.BlockLoader;
-import loaders.ItemLoader;
-import loaders.TabLoader;
+import loaders.Loader_Simple_Blocks;
+import loaders.Loader_Simple_Items;
+import loaders.Loader_M_CreativeTabs;
 
 /**
  * @author Your Name Here, also might be worth replacing that automatically generated Copyright notice with your LPGL compatible License/Name instead of mine.
@@ -71,9 +71,9 @@ public final class MoegAddon extends gregapi.api.Abstract_Mod {
 	@Override
 	public void onModPreInit2(cpw.mods.fml.common.event.FMLPreInitializationEvent aEvent) {
 
-		TabLoader TabLoader=new TabLoader();
-		ItemLoader ItemLoader =new ItemLoader();
-		BlockLoader BlockLoader = new BlockLoader();
+		Loader_M_CreativeTabs TabLoader = new Loader_M_CreativeTabs();
+		Loader_Simple_Items ItemLoader = new Loader_Simple_Items();
+		Loader_Simple_Blocks BlockLoader = new Loader_Simple_Blocks();
 
 	}
 

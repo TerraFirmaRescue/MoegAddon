@@ -1,6 +1,6 @@
 package creativetabs;
 
-import loaders.ItemLoader;
+import loaders.Loader_Simple_Items;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,7 +13,7 @@ public class ElectronicTab extends CreativeTabs{
 
 	public Item getTabIconItem()
     {
-        return ItemLoader.Mainframe7;
+        return Loader_Simple_Items.Mainframe7;
     }
 }
 

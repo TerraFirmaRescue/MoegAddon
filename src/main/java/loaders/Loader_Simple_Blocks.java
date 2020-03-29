@@ -2,7 +2,7 @@ package loaders;
 
 import block.*;
 
-public class BlockLoader {
+public class Loader_Simple_Blocks {
     public static final FlammableiceBlock FlammableiceBlock = new FlammableiceBlock();
     public static final MainframeCluster MAINFRAME_CLUSTER_1 = new MainframeCluster("MainframeCluster1", "MainframeCluster1/");
     public static final MainframeCluster MAINFRAME_CLUSTER_2 = new MainframeCluster("MainframeCluster2", "MainframeCluster2/");

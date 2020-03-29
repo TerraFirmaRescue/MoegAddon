@@ -1,6 +1,6 @@
 package block;
 
-import loaders.TabLoader;
+import loaders.Loader_M_CreativeTabs;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +11,7 @@ public class MainframeCluster extends Block{
 
     public MainframeCluster(String name, String texturePath) {
         super(Material.iron);
-        this.setCreativeTab(TabLoader.BlockTab);
+        this.setCreativeTab(Loader_M_CreativeTabs.BlockTab);
         this.setStepSound(soundTypeMetal);
         this.setHarvestLevel("pickaxe", 1);
         this.setBlockName(name);

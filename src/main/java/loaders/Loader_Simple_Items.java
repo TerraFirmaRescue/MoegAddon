@@ -3,7 +3,7 @@ package loaders;
 import item.ElectronicBase;
 import net.minecraft.item.Item;
 
-public class ItemLoader {
+public class Loader_Simple_Items {
 	public static final item.Simpleresistance Simpleresistance=new item.Simpleresistance();
 	public static final item.SimpleCapacitance SIMPLE_CAPACITANCE = new item.SimpleCapacitance();
     public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
