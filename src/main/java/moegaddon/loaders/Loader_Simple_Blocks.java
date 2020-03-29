@@ -1,6 +1,6 @@
-package loaders;
+package moegaddon.loaders;
 
-import block.*;
+import moegaddon.block.*;
 
 public class Loader_Simple_Blocks {
     public static final FlammableiceBlock FlammableiceBlock = new FlammableiceBlock();

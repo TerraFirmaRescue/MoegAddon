@@ -17,11 +17,14 @@
  * along with GregTech. If not, see <http://www.gnu.org/licenses/>.
  */
 
-package Main;
+package moegaddon;
 
-import loaders.Loader_Simple_Blocks;
-import loaders.Loader_Simple_Items;
-import loaders.Loader_M_CreativeTabs;
+import gregapi.code.ArrayListNoNulls;
+
+import moegaddon.loaders.*;
+
+import static gregapi.data.CS.ERR;
+import static gregapi.data.CS.F;
 
 /**
  * @author Your Name Here, also might be worth replacing that automatically generated Copyright notice with your LPGL compatible License/Name instead of mine.
@@ -51,7 +54,7 @@ public final class MoegAddon extends gregapi.api.Abstract_Mod {
 	/** Contains a ModData Object for ID and Name. Doesn't have to be changed. */
 	public static gregapi.code.ModData MOD_DATA = new gregapi.code.ModData(MOD_ID, MOD_NAME);
 
-	@cpw.mods.fml.common.SidedProxy(modId = MOD_ID, clientSide = "Main.ClientProxy", serverSide = "Main.ServerProxy")
+	@cpw.mods.fml.common.SidedProxy(modId = MOD_ID, clientSide = "moegaddon.ClientProxy", serverSide = "moegaddon.ServerProxy")
 	public static gregapi.api.Abstract_Proxy PROXY;
 
 	@Override public String getModID() {return MOD_ID;}
@@ -75,11 +78,23 @@ public final class MoegAddon extends gregapi.api.Abstract_Mod {
 		Loader_Simple_Items ItemLoader = new Loader_Simple_Items();
 		Loader_Simple_Blocks BlockLoader = new Loader_Simple_Blocks();
 
+		ArrayListNoNulls<Runnable> tList = new ArrayListNoNulls<>(F,
+				new Loader_M_Recipes()
+		);
+
+		for (Runnable tRunnable : tList) try {tRunnable.run();} catch(Throwable e) {e.printStackTrace(ERR);}
+
 	}
 
 
 	@Override
 	public void onModInit2(cpw.mods.fml.common.event.FMLInitializationEvent aEvent) {
+
+		ArrayListNoNulls<Runnable> tList = new ArrayListNoNulls<>(F,
+				new Loader_M_MultiTileEntities()
+		);
+
+		for (Runnable tRunnable : tList) try {tRunnable.run();} catch(Throwable e) {e.printStackTrace(ERR);}
 
 	}
 

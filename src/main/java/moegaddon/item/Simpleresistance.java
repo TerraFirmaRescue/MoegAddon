@@ -1,7 +1,7 @@
-package item;
+package moegaddon.item;
 
 
-import loaders.Loader_M_CreativeTabs;
+import moegaddon.loaders.Loader_M_CreativeTabs;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
