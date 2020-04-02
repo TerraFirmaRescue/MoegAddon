@@ -1,135 +1,138 @@
 package moegaddon.loaders;
 
-import moegaddon.item.ElectronicBase;
+import moegaddon.item.ItemBase;
+import moegaddon.item.*;
 import net.minecraft.item.Item;
 
 public class ItemLoader {
-	public static final moegaddon.item.Simpleresistance Simpleresistance=new moegaddon.item.Simpleresistance();
-	public static final moegaddon.item.SimpleCapacitance SIMPLE_CAPACITANCE = new moegaddon.item.SimpleCapacitance();
-    public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
-	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
+    public static final Item SeedCrystalSilicon = new ItemBase("SeedCrystalSilicon"); //硅籽晶
+	public static final Item PolycrystallineSilicon = new ItemBase("PolycrystallineSilicon"); //多晶硅
     //简易系列
-	public static ElectronicBase Simpletransistor = new ElectronicBase( "Simpletransistor"); //简易电阻
+	public static ItemBase Simpletransistor = new ItemBase( "Simpletransistor"); //简易电阻
+    public static final Simpleresistance Simpleresistance=new Simpleresistance();
+    public static final SimpleCapacitance SimpleCapacitance = new SimpleCapacitance();
     //初始
-	public static ElectronicBase RawWafer = new ElectronicBase( "RawWafer"); //待光刻晶元
+	public static ItemBase RawWafer = new ItemBase( "RawWafer"); //待光刻晶元
 
     //粗制的光刻后晶元
-    public static ElectronicBase Wafer30wm = new ElectronicBase("Wafer30wm");
-    public static ElectronicBase Wafer20wm = new ElectronicBase("Wafer20wm");
-    public static ElectronicBase Wafer10wm = new ElectronicBase("Wafer10wm");
+    public static ItemBase Wafer30wm = new ItemBase("Wafer30wm");
+    public static ItemBase Wafer20wm = new ItemBase("Wafer20wm");
+    public static ItemBase Wafer10wm = new ItemBase("Wafer10wm");
 
     //Photomasks
-    public static ElectronicBase PhotomaskRaw = new ElectronicBase("PhotomaskRaw");
+    public static ItemBase PhotomaskRaw = new ItemBase("PhotomaskRaw");
 
-    public static ElectronicBase PhotomaskWork = new ElectronicBase("PhotomaskWork"); //光学掩膜板
-    public static ElectronicBase PhotomaskCentral = new ElectronicBase("PhotomaskCentral");
+    public static ItemBase PhotomaskWork = new ItemBase("PhotomaskWork"); //光学掩膜板
+    public static ItemBase PhotomaskCentral = new ItemBase("PhotomaskCentral");
 
-    public static ElectronicBase PhotomaskControl1 = new ElectronicBase("PhotomaskControl1");
-    public static ElectronicBase PhotomaskControl2 = new ElectronicBase("PhotomaskControl2");
-    public static ElectronicBase PhotomaskControl3 = new ElectronicBase("PhotomaskControl3");
-    public static ElectronicBase PhotomaskControl4 = new ElectronicBase("PhotomaskControl4");
+    public static ItemBase PhotomaskControl1 = new ItemBase("PhotomaskControl1");
+    public static ItemBase PhotomaskControl2 = new ItemBase("PhotomaskControl2");
+    public static ItemBase PhotomaskControl3 = new ItemBase("PhotomaskControl3");
+    public static ItemBase PhotomaskControl4 = new ItemBase("PhotomaskControl4");
 
-    public static ElectronicBase PhotomaskFilm1 = new ElectronicBase("PhotomaskFilm1");
-    public static ElectronicBase PhotomaskFilm2 = new ElectronicBase("PhotomaskFilm2");
-    public static ElectronicBase PhotomaskFilm3 = new ElectronicBase("PhotomaskFilm3");
-    public static ElectronicBase PhotomaskFilm4 = new ElectronicBase("PhotomaskFilm4");
+    public static ItemBase PhotomaskFilm1 = new ItemBase("PhotomaskFilm1");
+    public static ItemBase PhotomaskFilm2 = new ItemBase("PhotomaskFilm2");
+    public static ItemBase PhotomaskFilm3 = new ItemBase("PhotomaskFilm3");
+    public static ItemBase PhotomaskFilm4 = new ItemBase("PhotomaskFilm4");
 
     //CPU
-    public static ElectronicBase Wafer1wm                   = new ElectronicBase("Wafer1wm"); //光刻后晶元
-    public static ElectronicBase Wafer200nm                 = new ElectronicBase("Wafer200nm");
-    public static ElectronicBase Wafer60nm                  = new ElectronicBase("Wafer60nm");
-    public static ElectronicBase Wafer20nm                  = new ElectronicBase("Wafer20nm");
-    //public static ElectronicBase SlightlyOxidizedWafer1wm   = new ElectronicBase("SlightlyOxidizedWafer1wm"); //初步氧化晶元
-    //public static ElectronicBase SlightlyOxidizedWafer200nm = new ElectronicBase("SlightlyOxidizedWafer200nm");
-    //public static ElectronicBase SlightlyOxidizedWafer60nm  = new ElectronicBase("SlightlyOxidizedWafer60nm");
-    //public static ElectronicBase SlightlyOxidizedWafer20nm  = new ElectronicBase("SlightlyOxidizedWafer20nm");
-    public static ElectronicBase CleanedWafer1wm            = new ElectronicBase("CleanedWafer1wm"); //待掺杂晶元（洁净晶元）
-    public static ElectronicBase CleanedWafer200nm          = new ElectronicBase("CleanedWafer200nm");
-    public static ElectronicBase CleanedWafer60nm           = new ElectronicBase("CleanedWafer60nm");
-    public static ElectronicBase CleanedWafer20nm           = new ElectronicBase("CleanedWafer20nm");
-    public static ElectronicBase MonolayerWafer1wm          = new ElectronicBase("MonolayerWafer1wm"); //单层晶元
-    public static ElectronicBase MonolayerWafer200nm        = new ElectronicBase("MonolayerWafer200nm");
-    public static ElectronicBase MonolayerWafer60nm         = new ElectronicBase("MonolayerWafer60nm");
-    public static ElectronicBase MonolayerWafer20nm         = new ElectronicBase("MonolayerWafer20nm");
-    public static ElectronicBase MultilayerWafer1wm         = new ElectronicBase("MultilayerWafer1wm"); //多层晶元
-    public static ElectronicBase MultilayerWafer200nm       = new ElectronicBase("MultilayerWafer200nm");
-    public static ElectronicBase MultilayerWafer60nm        = new ElectronicBase("MultilayerWafer60nm");
-    public static ElectronicBase MultilayerWafer20nm        = new ElectronicBase("MultilayerWafer20nm");
-    public static ElectronicBase IntegratedCircuit256MHz    = new ElectronicBase("IntegratedCircuit256MHz"); //集成电路
-    public static ElectronicBase IntegratedCircuit512MHz    = new ElectronicBase("IntegratedCircuit512MHz");
-    public static ElectronicBase IntegratedCircuit1GHz      = new ElectronicBase("IntegratedCircuit1GHz");
-    public static ElectronicBase IntegratedCircuit2GHz      = new ElectronicBase("IntegratedCircuit2GHz");
+    public static ItemBase Wafer1wm                   = new ItemBase("Wafer1wm"); //光刻后晶元
+    public static ItemBase Wafer200nm                 = new ItemBase("Wafer200nm");
+    public static ItemBase Wafer60nm                  = new ItemBase("Wafer60nm");
+    public static ItemBase Wafer20nm                  = new ItemBase("Wafer20nm");
+    //public static ItemBase SlightlyOxidizedWafer1wm   = new ItemBase("SlightlyOxidizedWafer1wm"); //初步氧化晶元
+    //public static ItemBase SlightlyOxidizedWafer200nm = new ItemBase("SlightlyOxidizedWafer200nm");
+    //public static ItemBase SlightlyOxidizedWafer60nm  = new ItemBase("SlightlyOxidizedWafer60nm");
+    //public static ItemBase SlightlyOxidizedWafer20nm  = new ItemBase("SlightlyOxidizedWafer20nm");
+    public static ItemBase CleanedWafer1wm            = new ItemBase("CleanedWafer1wm"); //待掺杂晶元（洁净晶元）
+    public static ItemBase CleanedWafer200nm          = new ItemBase("CleanedWafer200nm");
+    public static ItemBase CleanedWafer60nm           = new ItemBase("CleanedWafer60nm");
+    public static ItemBase CleanedWafer20nm           = new ItemBase("CleanedWafer20nm");
+    public static ItemBase MonolayerWafer1wm          = new ItemBase("MonolayerWafer1wm"); //单层晶元
+    public static ItemBase MonolayerWafer200nm        = new ItemBase("MonolayerWafer200nm");
+    public static ItemBase MonolayerWafer60nm         = new ItemBase("MonolayerWafer60nm");
+    public static ItemBase MonolayerWafer20nm         = new ItemBase("MonolayerWafer20nm");
+    public static ItemBase MultilayerWafer1wm         = new ItemBase("MultilayerWafer1wm"); //多层晶元
+    public static ItemBase MultilayerWafer200nm       = new ItemBase("MultilayerWafer200nm");
+    public static ItemBase MultilayerWafer60nm        = new ItemBase("MultilayerWafer60nm");
+    public static ItemBase MultilayerWafer20nm        = new ItemBase("MultilayerWafer20nm");
+    public static ItemBase IntegratedCircuit256MHz    = new ItemBase("IntegratedCircuit256MHz"); //集成电路
+    public static ItemBase IntegratedCircuit512MHz    = new ItemBase("IntegratedCircuit512MHz");
+    public static ItemBase IntegratedCircuit1GHz      = new ItemBase("IntegratedCircuit1GHz");
+    public static ItemBase IntegratedCircuit2GHz      = new ItemBase("IntegratedCircuit2GHz");
 
-    public static ElectronicBase CPU_256MHz_2   = new ElectronicBase("CPU_256MHz_2"); //CPU
-    public static ElectronicBase CPU_256MHz_4   = new ElectronicBase("CPU_256MHz_4");
-    public static ElectronicBase CPU_256MHz_8   = new ElectronicBase("CPU_256MHz_8");
-    public static ElectronicBase CPU_256MHz_16  = new ElectronicBase("CPU_256MHz_16");
+    public static ItemBase CPU_256MHz_2   = new ItemBase("CPU_256MHz_2"); //CPU
+    public static ItemBase CPU_256MHz_4   = new ItemBase("CPU_256MHz_4");
+    public static ItemBase CPU_256MHz_8   = new ItemBase("CPU_256MHz_8");
+    public static ItemBase CPU_256MHz_16  = new ItemBase("CPU_256MHz_16");
 
-    public static ElectronicBase CPU_512MHz_2   = new ElectronicBase("CPU_512MHz_2");
-    public static ElectronicBase CPU_512MHz_4   = new ElectronicBase("CPU_512MHz_4");
-    public static ElectronicBase CPU_512MHz_8   = new ElectronicBase("CPU_512MHz_8");
-    public static ElectronicBase CPU_512MHz_16  = new ElectronicBase("CPU_512MHz_16");
+    public static ItemBase CPU_512MHz_2   = new ItemBase("CPU_512MHz_2");
+    public static ItemBase CPU_512MHz_4   = new ItemBase("CPU_512MHz_4");
+    public static ItemBase CPU_512MHz_8   = new ItemBase("CPU_512MHz_8");
+    public static ItemBase CPU_512MHz_16  = new ItemBase("CPU_512MHz_16");
 
-    public static ElectronicBase CPU_1GHz_2     = new ElectronicBase("CPU_1GHz_2");
-    public static ElectronicBase CPU_1GHz_4     = new ElectronicBase("CPU_1GHz_4");
-    public static ElectronicBase CPU_1GHz_8     = new ElectronicBase("CPU_1GHz_8");
-    public static ElectronicBase CPU_1GHz_16    = new ElectronicBase("CPU_1GHz_16");
+    public static ItemBase CPU_1GHz_2     = new ItemBase("CPU_1GHz_2");
+    public static ItemBase CPU_1GHz_4     = new ItemBase("CPU_1GHz_4");
+    public static ItemBase CPU_1GHz_8     = new ItemBase("CPU_1GHz_8");
+    public static ItemBase CPU_1GHz_16    = new ItemBase("CPU_1GHz_16");
 
-    public static ElectronicBase CPU_2GHz_2     = new ElectronicBase("CPU_2GHz_2");
-    public static ElectronicBase CPU_2GHz_4     = new ElectronicBase("CPU_2GHz_4");
-    public static ElectronicBase CPU_2GHz_8     = new ElectronicBase("CPU_2GHz_8");
-    public static ElectronicBase CPU_2GHz_16    = new ElectronicBase("CPU_2GHz_16");
+    public static ItemBase CPU_2GHz_2     = new ItemBase("CPU_2GHz_2");
+    public static ItemBase CPU_2GHz_4     = new ItemBase("CPU_2GHz_4");
+    public static ItemBase CPU_2GHz_8     = new ItemBase("CPU_2GHz_8");
+    public static ItemBase CPU_2GHz_16    = new ItemBase("CPU_2GHz_16");
 
     //RAM
-    public static ElectronicBase CCL            = new ElectronicBase("CCL"); //覆铜板 Copper Clad Laminate
-    public static ElectronicBase MemoryCell128M = new ElectronicBase("MemoryCell128M");
-    public static ElectronicBase MemoryCell256M = new ElectronicBase("MemoryCell256M");
-    public static ElectronicBase MemoryCell512M = new ElectronicBase("MemoryCell512M");
-    public static ElectronicBase MemoryCell1G   = new ElectronicBase("MemoryCell1G");
+    public static ItemBase CCL            = new ItemBase("CCL"); //覆铜板 Copper Clad Laminate
+    public static ItemBase MemoryCell128M = new ItemBase("MemoryCell128M");
+    public static ItemBase MemoryCell256M = new ItemBase("MemoryCell256M");
+    public static ItemBase MemoryCell512M = new ItemBase("MemoryCell512M");
+    public static ItemBase MemoryCell1G   = new ItemBase("MemoryCell1G");
 
-    public static ElectronicBase RAM_128M_2     = new ElectronicBase( "RAM_128M_2"); //RAM
-    public static ElectronicBase RAM_128M_4     = new ElectronicBase( "RAM_128M_4");
-    public static ElectronicBase RAM_128M_8     = new ElectronicBase( "RAM_128M_8");
-    public static ElectronicBase RAM_128M_16    = new ElectronicBase("RAM_128M_16");
+    public static ItemBase RAM_128M_2     = new ItemBase( "RAM_128M_2"); //RAM
+    public static ItemBase RAM_128M_4     = new ItemBase( "RAM_128M_4");
+    public static ItemBase RAM_128M_8     = new ItemBase( "RAM_128M_8");
+    public static ItemBase RAM_128M_16    = new ItemBase("RAM_128M_16");
 
-    public static ElectronicBase RAM_256M_2     = new ElectronicBase("RAM_256M_2");
-    public static ElectronicBase RAM_256M_4     = new ElectronicBase("RAM_256M_4");
-    public static ElectronicBase RAM_256M_8     = new ElectronicBase("RAM_256M_8");
-    public static ElectronicBase RAM_256M_16    = new ElectronicBase("RAM_256M_16");
+    public static ItemBase RAM_256M_2     = new ItemBase("RAM_256M_2");
+    public static ItemBase RAM_256M_4     = new ItemBase("RAM_256M_4");
+    public static ItemBase RAM_256M_8     = new ItemBase("RAM_256M_8");
+    public static ItemBase RAM_256M_16    = new ItemBase("RAM_256M_16");
 
-    public static ElectronicBase RAM_512M_2     = new ElectronicBase("RAM_512M_2");
-    public static ElectronicBase RAM_512M_4     = new ElectronicBase("RAM_512M_4");
-    public static ElectronicBase RAM_512M_8     = new ElectronicBase("RAM_512M_8");
-    public static ElectronicBase RAM_512M_16    = new ElectronicBase("RAM_512M_16");
+    public static ItemBase RAM_512M_2     = new ItemBase("RAM_512M_2");
+    public static ItemBase RAM_512M_4     = new ItemBase("RAM_512M_4");
+    public static ItemBase RAM_512M_8     = new ItemBase("RAM_512M_8");
+    public static ItemBase RAM_512M_16    = new ItemBase("RAM_512M_16");
 
-    public static ElectronicBase RAM_1G_2       = new ElectronicBase("RAM_1G_2");
-    public static ElectronicBase RAM_1G_4       = new ElectronicBase("RAM_1G_4");
-    public static ElectronicBase RAM_1G_8       = new ElectronicBase("RAM_1G_8");
-    public static ElectronicBase RAM_1G_16      = new ElectronicBase("RAM_1G_16");
+    public static ItemBase RAM_1G_2       = new ItemBase("RAM_1G_2");
+    public static ItemBase RAM_1G_4       = new ItemBase("RAM_1G_4");
+    public static ItemBase RAM_1G_8       = new ItemBase("RAM_1G_8");
+    public static ItemBase RAM_1G_16      = new ItemBase("RAM_1G_16");
 
     //Mainboard
-    public static ElectronicBase SMDResistor     = new ElectronicBase("SMDResistor"); //贴片元件
-    public static ElectronicBase PatchCapacitor  = new ElectronicBase("PatchCapacitor");
-    public static ElectronicBase PatchDiode      = new ElectronicBase("PatchDiode");
-    public static ElectronicBase PatchTransistor = new ElectronicBase("PatchTransistor");
+    public static ItemBase SMDResistor     = new ItemBase("SMDResistor"); //贴片元件
+    public static ItemBase PatchCapacitor  = new ItemBase("PatchCapacitor");
+    public static ItemBase PatchDiode      = new ItemBase("PatchDiode");
+    public static ItemBase PatchTransistor = new ItemBase("PatchTransistor");
 
-    public static ElectronicBase EpoxyPlate                      = new ElectronicBase("EpoxyPlate"); //电路基板 处理器主板
-    public static ElectronicBase EpoxyCircuitBoard               = new ElectronicBase("EpoxyCircuitBoard");
-    public static ElectronicBase FabricStrengthenedCircuitBoard  = new ElectronicBase("FabricStrengthenedCircuitBoard");
-    public static ElectronicBase BioCircuitBoard                 = new ElectronicBase("BioCircuitBoard");
-    public static ElectronicBase BasicProcessorMainboard         = new ElectronicBase("BasicProcessorMainboard");
-    public static ElectronicBase IntermediateProcessorMainboard  = new ElectronicBase("IntermediateProcessorMainboard");
-    public static ElectronicBase AdvancedProcessorMainboard      = new ElectronicBase("AdvancedProcessorMainboard");
+    public static ItemBase EpoxyPlate                      = new ItemBase("EpoxyPlate"); //电路基板 处理器主板
+    public static ItemBase EpoxyCircuitBoard               = new ItemBase("EpoxyCircuitBoard");
+    public static ItemBase FabricStrengthenedCircuitBoard  = new ItemBase("FabricStrengthenedCircuitBoard");
+    public static ItemBase BioCircuitBoard                 = new ItemBase("BioCircuitBoard");
+    public static ItemBase BasicProcessorMainboard         = new ItemBase("BasicProcessorMainboard");
+    public static ItemBase IntermediateProcessorMainboard  = new ItemBase("IntermediateProcessorMainboard");
+    public static ItemBase AdvancedProcessorMainboard      = new ItemBase("AdvancedProcessorMainboard");
 
     //Mainframes
-    public static ElectronicBase Mainframe1  = new ElectronicBase("Mainframe1");
-    public static ElectronicBase Mainframe2  = new ElectronicBase("Mainframe2");
-    public static ElectronicBase Mainframe3  = new ElectronicBase("Mainframe3");
-    public static ElectronicBase Mainframe4  = new ElectronicBase("Mainframe4");
-    public static ElectronicBase Mainframe5  = new ElectronicBase("Mainframe5");
-    public static ElectronicBase Mainframe6  = new ElectronicBase("Mainframe6");
-    public static ElectronicBase Mainframe7  = new ElectronicBase("Mainframe7");
+    public static ItemBase Mainframe1  = new ItemBase("Mainframe1");
+    public static ItemBase Mainframe2  = new ItemBase("Mainframe2");
+    public static ItemBase Mainframe3  = new ItemBase("Mainframe3");
+    public static ItemBase Mainframe4  = new ItemBase("Mainframe4");
+    public static ItemBase Mainframe5  = new ItemBase("Mainframe5");
+    public static ItemBase Mainframe6  = new ItemBase("Mainframe6");
+    public static ItemBase Mainframe7  = new ItemBase("Mainframe7");
 
-    public static ElectronicBase StarPlatinum = new ElectronicBase("StarPlatinum");
+    public static ItemBase StarPlatinum = new ItemBase("StarPlatinum");
+
+    //Ores
 
 }

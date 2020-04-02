@@ -2,15 +2,15 @@
 {
   "modid": "moegadd",
   "name": "MoegAddon",
-  "description": "Addon to modpack Terrafirma: Rescue",
+  "description": "Addon to Modpack <Terrafirma: Rescue>",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "",
-  "updateUrl": "",
-  "authorList": ["MoegTeam"],
-  "credits": "Greg, MoegCraft",
+  "url": "https://github.com/yuesha-yc/MoegAddon",
+  "updateUrl": "https://github.com/yuesha-yc/MoegAddon/releases",
+  "authorList": ["YueSha, duck_egg, dashuaibia"],
+  "credits": "MoegCraft",
   "logoFile": "",
   "screenshots": [],
-  "dependencies": ["gregtech6"]
+  "dependencies": []
 }
 ]

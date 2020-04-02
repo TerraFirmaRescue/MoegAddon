@@ -4,9 +4,9 @@ import moegaddon.loaders.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
-public class ElectronicBase extends Item {
+public class ItemBase extends Item {
 
-    public ElectronicBase(String name) {
+    public ItemBase(String name) {
         super();
         this.setCreativeTab(TabLoader.ElectronicTab);
         this.setUnlocalizedName(name);

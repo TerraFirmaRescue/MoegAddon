@@ -7,10 +7,15 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-@Mod(modid="moegadd", name="MoegAddon", version="0.1")
+@Mod(modid=MoegAddon.MOD_ID, name=MoegAddon.MOD_NAME, version=MoegAddon.VERSION)
 public class MoegAddon {
 	@SidedProxy(clientSide = "moegaddon.ClientProxy", serverSide = "moegaddon.CommonProxy")
-    public static CommonProxy proxy;
+	public static CommonProxy proxy;
+
+	public static final String MOD_ID = "moegadd";
+	public static final String MOD_NAME = "MoegAddon";
+	public static final String VERSION = "1.03";
+
 	 	@EventHandler
 	    public void preInit(FMLPreInitializationEvent event)
 	    {
