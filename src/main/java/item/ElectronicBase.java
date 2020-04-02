@@ -1,6 +1,6 @@
-package moegaddon.item;
+package item;
 
-import moegaddon.loaders.Loader_M_CreativeTabs;
+import Main.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 
@@ -8,7 +8,7 @@ public class ElectronicBase extends Item {
 
     public ElectronicBase(String name) {
         super();
-        this.setCreativeTab(Loader_M_CreativeTabs.ElectronicTab);
+        this.setCreativeTab(TabLoader.ElectronicTab);
         this.setUnlocalizedName(name);
         this.setTextureName("moegadd:" + name);
         GameRegistry.registerItem(this, name);

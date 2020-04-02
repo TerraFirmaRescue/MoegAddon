@@ -1,6 +1,7 @@
-package moegaddon.creativetabs;
+package creativetabs;
 
-import moegaddon.loaders.Loader_Simple_Items;
+import Main.CommonProxy;
+import Main.ItemLoader;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -13,7 +14,7 @@ public class ElectronicTab extends CreativeTabs{
 
 	public Item getTabIconItem()
     {
-        return Loader_Simple_Items.Mainframe7;
+        return ItemLoader.Mainframe7;
     }
 }
 

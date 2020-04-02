@@ -1,6 +1,6 @@
-package moegaddon.creativetabs;
+package creativetabs;
 
-import moegaddon.loaders.Loader_Simple_Items;
+import Main.ItemLoader;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 
@@ -12,6 +12,6 @@ public class BlockTab extends CreativeTabs {
 
     public Item getTabIconItem()
     {
-        return Loader_Simple_Items.Simpleresistance;
+        return ItemLoader.Simpleresistance;
     }
 }

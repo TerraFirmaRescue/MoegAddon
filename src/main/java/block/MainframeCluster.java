@@ -1,6 +1,6 @@
-package moegaddon.block;
+package block;
 
-import moegaddon.loaders.Loader_M_CreativeTabs;
+import Main.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
@@ -11,7 +11,7 @@ public class MainframeCluster extends Block{
 
     public MainframeCluster(String name, String texturePath) {
         super(Material.iron);
-        this.setCreativeTab(Loader_M_CreativeTabs.BlockTab);
+        this.setCreativeTab(TabLoader.BlockTab);
         this.setStepSound(soundTypeMetal);
         this.setHarvestLevel("pickaxe", 1);
         this.setBlockName(name);
