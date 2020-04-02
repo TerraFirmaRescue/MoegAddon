@@ -1,4 +1,4 @@
-package Main;
+package moegaddon;
 
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
@@ -9,7 +9,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
 @Mod(modid="moegadd", name="MoegAddon", version="0.1")
 public class MoegAddon {
-	@SidedProxy(clientSide = "Main.ClientProxy", serverSide = "Main.CommonProxy")
+	@SidedProxy(clientSide = "moegaddon.ClientProxy", serverSide = "moegaddon.CommonProxy")
     public static CommonProxy proxy;
 	 	@EventHandler
 	    public void preInit(FMLPreInitializationEvent event)

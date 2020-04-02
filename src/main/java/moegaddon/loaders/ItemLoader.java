@@ -1,11 +1,11 @@
-package Main;
+package moegaddon.loaders;
 
-import item.ElectronicBase;
+import moegaddon.item.ElectronicBase;
 import net.minecraft.item.Item;
 
 public class ItemLoader {
-	public static final item.Simpleresistance Simpleresistance=new item.Simpleresistance();
-	public static final item.SimpleCapacitance SIMPLE_CAPACITANCE = new item.SimpleCapacitance();
+	public static final moegaddon.item.Simpleresistance Simpleresistance=new moegaddon.item.Simpleresistance();
+	public static final moegaddon.item.SimpleCapacitance SIMPLE_CAPACITANCE = new moegaddon.item.SimpleCapacitance();
     public static final Item SeedCrystalSilicon = new ElectronicBase("SeedCrystalSilicon"); //硅籽晶
 	public static final Item PolycrystallineSilicon = new ElectronicBase("PolycrystallineSilicon"); //多晶硅
     //简易系列

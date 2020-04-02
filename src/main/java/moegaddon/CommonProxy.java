@@ -1,8 +1,11 @@
-package Main;
+package moegaddon;
 
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import moegaddon.loaders.BlockLoader;
+import moegaddon.loaders.ItemLoader;
+import moegaddon.loaders.TabLoader;
 
 public class CommonProxy
 {
