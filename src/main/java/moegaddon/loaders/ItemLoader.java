@@ -131,10 +131,30 @@ public class ItemLoader {
     public static ItemBase Mainframe6  = new ItemBase("Mainframe6");
     public static ItemBase Mainframe7  = new ItemBase("Mainframe7");
 
+    //Misc
     public static ItemBase StarPlatinum = new ItemBase("StarPlatinum");
-    public static ItemBase CrushedPlatinumOre = new ItemBase("CrushedPlatinumOre");
+    public static ItemBase CDEmpty = new ItemBase("CultureDishEmpty");
+    public static ItemBase CDMSC = new ItemBase("CultureDishMSC");
+    public static ItemBase CDStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
+    public static ItemBase CDStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
+    public static ItemBase MSCBasalMedium = new ItemBase("MSCBasalMedium");
+    public static ItemBase MSCSupplement = new ItemBase("MSCSupplement");
 
-
-    //Ores
+    //Platinum Production
+    public static ItemBase CrushedPlatinumOre          = new ItemBase("CrushedPlatinumOre");          //粉碎铂矿
+    public static ItemBase WashedPlatinumOre           = new ItemBase("WashedPlatinumOre");           //洗净铂矿
+    public static ItemBase dustAmmoniumChloroPlatate       = new ItemBase("dustAmmoniumChloroPlatate");       //氯铂酸铵
+    public static ItemBase dustPalladiumDichloride         = new ItemBase("dustPalladiumDichloride");         //二氯二氨络亚钯
+    public static ItemBase dustLeachingResidueRhIrOsRu     = new ItemBase("dustLeachingResidueRhIrOsRu");     //浸出渣(富铑铱锇钌)
+    public static ItemBase dustLeachingResidueIrOsRu       = new ItemBase("dustLeachingResidueIrOsRu");       //浸出渣(富铱锇钌)
+    public static ItemBase dustLeachingResidueIr           = new ItemBase("dustLeachingResidueIr");           //浸出渣(富铱)
+    public static ItemBase dustRhodiumSulfate              = new ItemBase("dustRhodiumSulfate");              //铑硫酸盐
+    public static ItemBase dustSodiumPeroxide              = new ItemBase("dustSodiumPeroxide");              //过氧化钠
+    public static ItemBase dustAmmoniumHexachloroOsmium    = new ItemBase("dustAmmoniumHexachloroOsmium");    //六氯合锇酸铵
+    public static ItemBase dustAmmoniumHexachloroRuthenium = new ItemBase("dustAmmoniumHexachloroRuthenium"); //六氯合钌酸铵
+    public static ItemBase dustAmmoniumIridiumChloride     = new ItemBase("dustAmmoniumIridiumChloride");     //氯铱酸铵
+    public static ItemBase dustIridiumOxide                = new ItemBase("dustIridiumOxide");                //氧化铱
+    public static ItemBase dustRhodiumHydroxide            = new ItemBase("dustRhodiumHydroxide");            //氢氧化铑
+    public static ItemBase dustAmmoniumChloroRhodium       = new ItemBase("dustAmmoniumChloroRhodium");       //氯铑酸铵
 
 }

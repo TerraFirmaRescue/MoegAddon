@@ -1,0 +1,16 @@
+Changelog for MoegAddon 1.7.10
+
+1.04
+Added Platinum Metal Production process items
+
+1.03
+Added Electronics
+
+1.02
+Nothing
+
+1.01
+Nothing
+
+1.00
+AddedSimple Electronics
