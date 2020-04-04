@@ -132,6 +132,8 @@ public class ItemLoader {
     public static ItemBase Mainframe7  = new ItemBase("Mainframe7");
 
     public static ItemBase StarPlatinum = new ItemBase("StarPlatinum");
+    public static ItemBase CrushedPlatinumOre = new ItemBase("CrushedPlatinumOre");
+
 
     //Ores
 
