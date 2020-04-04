@@ -133,12 +133,10 @@ public class ItemLoader {
 
     //Misc
     public static ItemBase StarPlatinum = new ItemBase("StarPlatinum");
-    public static ItemBase CDEmpty = new ItemBase("CultureDishEmpty");
-    public static ItemBase CDMSC = new ItemBase("CultureDishMSC");
-    public static ItemBase CDStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
-    public static ItemBase CDStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
-    //public static ItemBase MSCBasalMedium = new ItemBase("MSCBasalMedium");
-    //public static ItemBase MSCSupplement = new ItemBase("MSCSupplement");
+    public static ItemBase CultureDishEmpty = new ItemBase("CultureDishEmpty");
+    public static ItemBase CultureDishMSC = new ItemBase("CultureDishMSC");
+    public static ItemBase CultureDishStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
+    public static ItemBase CultureDishStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
 
     //Platinum Production
     public static ItemBase CrushedPlatinumOre          = new ItemBase("CrushedPlatinumOre");          //粉碎铂矿
