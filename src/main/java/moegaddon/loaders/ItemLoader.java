@@ -137,8 +137,8 @@ public class ItemLoader {
     public static ItemBase CDMSC = new ItemBase("CultureDishMSC");
     public static ItemBase CDStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
     public static ItemBase CDStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
-    public static ItemBase MSCBasalMedium = new ItemBase("MSCBasalMedium");
-    public static ItemBase MSCSupplement = new ItemBase("MSCSupplement");
+    //public static ItemBase MSCBasalMedium = new ItemBase("MSCBasalMedium");
+    //public static ItemBase MSCSupplement = new ItemBase("MSCSupplement");
 
     //Platinum Production
     public static ItemBase CrushedPlatinumOre          = new ItemBase("CrushedPlatinumOre");          //粉碎铂矿
