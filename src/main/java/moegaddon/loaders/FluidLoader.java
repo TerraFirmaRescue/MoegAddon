@@ -1,13 +1,11 @@
 package moegaddon.loaders;
 
 import moegaddon.item.FluidBase;
-import moegaddon.item.*;
-import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fluids.Fluid;
 
 public class FluidLoader {
     public static final Fluid SolutionRichPtPa = new FluidBase("SolutionRichPtPa");    //富铂钯溶液
-    public static final Fluid SolutionRichPa = new FluidBase("SSolutionRichPa");    //富钯溶液
+    public static final Fluid SolutionRichPa = new FluidBase("SolutionRichPa");    //富钯溶液
     public static final Fluid MoltenSodiumBisulfate = new FluidBase("MoltenSodiumBisulfate");    //熔融硫酸氢钠
     public static final Fluid RhodiumSulfideSolution = new FluidBase("RhodiumSulfideSolution");    //硫化铑溶液
     public static final Fluid PregnantSolutionOsRu = new FluidBase("PregnantSolutionOsRu");    //吸收液(富锇钌)
