@@ -1,8 +1,8 @@
-package moegaddon.block;
+package moegaddon.fluid;
 
+import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import moegaddon.MoegAddon;
 import moegaddon.loaders.TabLoader;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
@@ -10,21 +10,21 @@ import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.BlockFluidClassic;
 import net.minecraft.util.IIcon;
+import net.minecraftforge.fluids.Fluid;
 
-public class BlockBoneMarrow extends BlockFluidClassic {
+public class BlockMoegaddFluid extends BlockFluidClassic {
 
+    @SideOnly(Side.CLIENT)
+    public static IIcon stillIcon;
+    @SideOnly(Side.CLIENT)
+    public static IIcon flowingIcon;
 
-
-    public BlockBoneMarrow() {
-        super(MoegAddon.BoneMarrow, Material.water);
+    public BlockMoegaddFluid(Fluid fluid, String blockName) {
+        super(fluid, Material.water);
         setCreativeTab(TabLoader.BlockTab);
-        setBlockName("Bone Marrow");
+        setBlockName(blockName);
+        GameRegistry.registerBlock(this, blockName);
     }
-
-    @SideOnly(Side.CLIENT)
-    protected IIcon stillIcon;
-    @SideOnly(Side.CLIENT)
-    protected IIcon flowingIcon;
 
     @Override
     public IIcon getIcon(int side, int meta) {
@@ -34,8 +34,8 @@ public class BlockBoneMarrow extends BlockFluidClassic {
     @SideOnly(Side.CLIENT)
     @Override
     public void registerBlockIcons(IIconRegister register){
-        stillIcon = register.registerIcon("moegadd:fluids/BoneMarrow");
-        flowingIcon = register.registerIcon("moegadd:fluids/BoneMarrow");
+        stillIcon = register.registerIcon("moegadd:fluids/" + fluidName);
+        flowingIcon = register.registerIcon("moegadd:fluids/" + fluidName);
     }
 
     @Override
@@ -47,7 +47,6 @@ public class BlockBoneMarrow extends BlockFluidClassic {
 
     }
 
-
     @Override
     public boolean displaceIfPossible(World world, int x, int y, int z) {
 
@@ -56,4 +55,5 @@ public class BlockBoneMarrow extends BlockFluidClassic {
         return super.displaceIfPossible(world, x, y, z);
 
     }
+
 }
