@@ -34,8 +34,8 @@ public class BlockMoegaddFluid extends BlockFluidClassic {
     @SideOnly(Side.CLIENT)
     @Override
     public void registerBlockIcons(IIconRegister register){
-        stillIcon = register.registerIcon("moegadd:fluids/" + fluidName);
-        flowingIcon = register.registerIcon("moegadd:fluids/" + fluidName);
+        stillIcon = register.registerIcon("moegadd:fluids/" + this.fluidName);
+        flowingIcon = register.registerIcon("moegadd:fluids/" + this.fluidName);
     }
 
     @Override
