@@ -1,4 +1,4 @@
-package moegaddon.fluid;
+package moegaddon.fluid.fluidBlocks;
 
 import cpw.mods.fml.common.registry.GameRegistry;
 import cpw.mods.fml.relauncher.Side;
@@ -6,16 +6,13 @@ import cpw.mods.fml.relauncher.SideOnly;
 import moegaddon.loaders.TabLoader;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
 import net.minecraftforge.fluids.BlockFluidClassic;
-import net.minecraft.util.IIcon;
 import net.minecraftforge.fluids.Fluid;
-import moegaddon.loaders.FluidLoader;
 
-import static moegaddon.loaders.FluidLoader.*;
-
-public class BlockMoegaddFluid extends BlockFluidClassic {
+public class BLOCK_RutheniumTetroxide extends BlockFluidClassic {
 
     @SideOnly(Side.CLIENT)
     public static IIcon stillIcon;
@@ -23,7 +20,8 @@ public class BlockMoegaddFluid extends BlockFluidClassic {
     public static IIcon flowingIcon;
 
     public String fluidBlockName;
-    public BlockMoegaddFluid(Fluid fluid, String blockName) {
+
+    public BLOCK_RutheniumTetroxide(Fluid fluid, String blockName) {
         super(fluid, Material.water);
         setCreativeTab(TabLoader.BlockTab);
         setBlockName(blockName);
@@ -33,12 +31,12 @@ public class BlockMoegaddFluid extends BlockFluidClassic {
 
     @Override
     public IIcon getIcon(int side, int meta) {
-        return (side == 0 || side == 1)? stillIcon : flowingIcon;
+        return (side == 0 || side == 1) ? stillIcon : flowingIcon;
     }
 
     @SideOnly(Side.CLIENT)
     @Override
-    public void registerBlockIcons(IIconRegister register){
+    public void registerBlockIcons(IIconRegister register) {
         stillIcon = register.registerIcon("moegadd:fluids/" + this.fluidBlockName);
         flowingIcon = register.registerIcon("moegadd:fluids/" + this.fluidBlockName);
     }
@@ -60,5 +58,4 @@ public class BlockMoegaddFluid extends BlockFluidClassic {
         return super.displaceIfPossible(world, x, y, z);
 
     }
-
 }
