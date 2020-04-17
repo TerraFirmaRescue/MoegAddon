@@ -129,10 +129,10 @@ item.dustRhodiumHydroxide.name=氢氧化铑粉
 item.dustAmmoniumChloroRhodium.name=氯铑酸铵粉
 
 #Bio circuit related
-item.CultureDishEmpty.name=培养基(空)
-item.CultureDishMSC.name=培养基(干细胞基液)
-item.CultureDishStemCellEmbryonic.name=接种后干细胞培养基
-item.CultureDishStemCellSomatic.name=干细胞培养基
+item.CultureDishEmpty.name=培养皿(空)
+item.CultureDishMSC.name=培养皿(干细胞基液)
+item.CultureDishStemCellEmbryonic.name=培养皿(接种后干细胞)
+item.CultureDishStemCellSomatic.name=培养皿(干细胞)
 item.dustInorganicSaltMixture.name=无机盐混合物粉
 item.dustTinyInorganicSaltMixture.name=小撮无机盐混合物粉
 item.dustGlucose.name=葡萄糖粉
@@ -150,7 +150,7 @@ item.point50.name=50 信用点 (泛银河系通用)
 item.point100.name=100 信用点 (泛银河系通用)
 
 #CreativeTabs
-itemGroup.ElectronicTab=电子元件 | MoegAddon
+itemGroup.ElectronicTab=物品 | MoegAddon
 itemGroup.BlockTab=方块 | MoegAddon
 
 #Tiles
@@ -165,5 +165,46 @@ tile.MainframeCluster7.name=终极巨型机组件
 tile.Flammableice.name=可燃冰
 
 #Fluids
-fluid.MSC.name=干细胞基液
-tile.MSC.name=干细胞基液
+fluid.SolutionRichPtPa.name=富铂钯溶液
+fluid.SolutionRichPa.name=富钯溶液
+fluid.MoltenSodiumBisulfate.name=熔融硫酸氢钠
+fluid.RhodiumSulfideSolution.name=硫化铑溶液
+fluid.PregnantSolutionOsRu.name=吸收液(富锇钌)
+fluid.AbsorptionLiquidRu.name=吸收液（富钌）
+fluid.RutheniumTetroxide.name=四氧化钌
+fluid.OsmiumTetroxide.name=四氧化锇
+fluid.ChloroRhodiumAcid.name=氯钌酸
+fluid.MSCBasalMedium.name=干细胞基础培养基
+fluid.MSCSupplement.name=干细胞营养添加物
+fluid.MSC.name=干细胞培养基液
+fluid.BoneMarrow.name=骨髓血
+fluid.SPSS.name=生理盐水
+fluid.AmylumSolution.name=淀粉溶液
+fluid.VitaminBSolution.name=维生素B溶液
+fluid.HormoneSolution.name=激素溶液
+fluid.Polyimide.name=聚酰亚胺
+fluid.TwoComponentAnhydride.name=二元酐
+fluid.TwoElementAmine.name=二元胺
+fluid.DifferentiationPromotingProteinNeuron.name=促分化蛋白质(神经细胞)
+
+tile.SolutionRichPtPa.name=富铂钯溶液
+tile.SolutionRichPa.name=富钯溶液
+tile.MoltenSodiumBisulfate.name=熔融硫酸氢钠
+tile.RhodiumSulfideSolution.name=硫化铑溶液
+tile.PregnantSolutionOsRu.name=吸收液(富锇钌)
+tile.AbsorptionLiquidRu.name=吸收液（富钌）
+tile.RutheniumTetroxide.name=四氧化钌
+tile.OsmiumTetroxide.name=四氧化锇
+tile.ChloroRhodiumAcid.name=氯钌酸
+tile.MSCBasalMedium.name=干细胞基础培养基
+tile.MSCSupplement.name=干细胞营养添加物
+tile.MSC.name=干细胞培养基液
+tile.BoneMarrow.name=骨髓血
+tile.SPSS.name=生理盐水
+tile.AmylumSolution.name=淀粉溶液
+tile.VitaminBSolution.name=维生素B溶液
+tile.HormoneSolution.name=激素溶液
+tile.Polyimide.name=聚酰亚胺
+tile.TwoComponentAnhydride.name=二元酐
+tile.TwoElementAmine.name=二元胺
+tile.DifferentiationPromotingProteinNeuron.name=促分化蛋白质(神经细胞)

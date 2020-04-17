@@ -150,7 +150,7 @@ item.point50.name=50 Credit Point (Intergalactica Universal)
 item.point100.name=100 Credit Point (Intergalactica Universal)
 
 #CreativeTabs
-itemGroup.ElectronicTab=Electronic Tab | MoegAddon
+itemGroup.ElectronicTab=Item Tab | MoegAddon
 itemGroup.BlockTab=Block Tab | MoegAddon
 
 #Tiles
@@ -162,3 +162,48 @@ tile.MainframeCluster5.name=Mainframe Cluster Level 5
 tile.MainframeCluster6.name=Mainframe Cluster Level 6
 tile.MainframeCluster7.name=Mainframe Cluster Level 7
 tile.Flammableice.name=Flammable Ice
+
+#Fluids
+fluid.SolutionRichPtPa.name=Rich Platinum Palladium Solution
+fluid.SolutionRichPa.name=Rich Palladium Solution
+fluid.MoltenSodiumBisulfate.name=Molten Sodium Bisulfate
+fluid.RhodiumSulfideSolution.name=Rhodium Sulfide Solution
+fluid.PregnantSolutionOsRu.name=Rich Osmium Ruthenium Absorption Liquid
+fluid.AbsorptionLiquidRu.name=Rich Ruthenium Absorption Liquid
+fluid.RutheniumTetroxide.name=Ruthenium Tetroxide
+fluid.OsmiumTetroxide.name=Osmium Tetroxide
+fluid.ChloroRhodiumAcid.name=Chlororhodium Acid
+fluid.MSCBasalMedium.name=MSC Basal Medium
+fluid.MSCSupplement.name=MSC Supplement
+fluid.MSC.name=MSC
+fluid.BoneMarrow.name=Bone Marrow
+fluid.SPSS.name=Stroke-physiological Saline Solution
+fluid.AmylumSolution.name=Amylum Solution
+fluid.VitaminBSolution.name=Vitamin B Solution
+fluid.HormoneSolution.name=Hormone Solution
+fluid.Polyimide.name=Polyimide
+fluid.TwoComponentAnhydride.name=Two Component Anhydride
+fluid.TwoElementAmine.name=Two Element Amine
+fluid.DifferentiationPromotingProteinNeuron.name=Differentiation Promoting Protein (Neuron Cell)
+
+tile.SolutionRichPtPa.name=Rich Platinum Palladium Solution
+tile.SolutionRichPa.name=Rich Palladium Solution
+tile.MoltenSodiumBisulfate.name=Molten Sodium Bisulfate
+tile.RhodiumSulfideSolution.name=Rhodium Sulfide Solution
+tile.PregnantSolutionOsRu.name=Rich Osmium Ruthenium Absorption Liquid
+tile.AbsorptionLiquidRu.name=Rich Ruthenium Absorption Liquid
+tile.RutheniumTetroxide.name=Ruthenium Tetroxide
+tile.OsmiumTetroxide.name=Osmium Tetroxide
+tile.ChloroRhodiumAcid.name=Chlororhodium Acid
+tile.MSCBasalMedium.name=MSC Basal Medium
+tile.MSCSupplement.name=MSC Supplement
+tile.MSC.name=MSC
+tile.BoneMarrow.name=Bone Marrow
+tile.SPSS.name=Stroke-physiological Saline Solution
+tile.AmylumSolution.name=Amylum Solution
+tile.VitaminBSolution.name=Vitamin B Solution
+tile.HormoneSolution.name=Hormone Solution
+tile.Polyimide.name=Polyimide
+tile.TwoComponentAnhydride.name=Two Component Anhydride
+tile.TwoElementAmine.name=Two Element Amine
+tile.DifferentiationPromotingProteinNeuron.name=Differentiation Promoting Protein (Neuron Cell)
