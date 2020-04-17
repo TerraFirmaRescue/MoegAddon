@@ -155,4 +155,13 @@ public class ItemLoader {
     public static ItemBase dustRhodiumHydroxide            = new ItemBase("dustRhodiumHydroxide");            //氢氧化铑
     public static ItemBase dustAmmoniumChloroRhodium       = new ItemBase("dustAmmoniumChloroRhodium");       //氯铑酸铵
 
+    //生物电路相关2
+    public static ItemBase dustInorganicSaltMixture = new ItemBase("dustInorganicSaltMixture");               //无机盐混合物粉
+    public static ItemBase dustTinyInorganicSaltMixture = new ItemBase("dustTinyInorganicSaltMixture");       //小撮无机盐混合物粉
+    public static ItemBase dustGlucose = new ItemBase("dustGlucose");                                         //葡萄糖粉
+    public static ItemBase StemCell = new ItemBase("StemCell");                                               //干细胞
+    public static ItemBase NeuronCell = new ItemBase("NeuronCell");                                           //神经细胞
+    public static ItemBase UnformedEmbryo = new ItemBase("UnformedEmbryo");                                   //未成形胚胎
+    public static ItemBase Microchip = new ItemBase("Microchip");                                             //微型芯片
+    public static ItemBase BioCircuit = new ItemBase("BioCircuit");                                           //生物电路板
 }
