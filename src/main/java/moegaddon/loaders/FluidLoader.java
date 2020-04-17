@@ -20,7 +20,7 @@ public class FluidLoader {
     public static final RhodiumSulfideSolution RhodiumSulfideSolution = new RhodiumSulfideSolution("RhodiumSulfideSolution");    //硫化铑溶液
     public static final BLOCK_RhodiumSulfideSolution BLOCK_RhodiumSulfideSolution = new BLOCK_RhodiumSulfideSolution(RhodiumSulfideSolution,"RhodiumSulfideSolution");    //硫化铑溶液
 
-    public static final PregnantSolutionOsRu PregnantSolutionOsRu   = new PregnantSolutionOsRu("PregnantSolutionOsRu");    //吸收液(富锇钌)
+    public static final PregnantSolutionOsRu PregnantSolutionOsRu   = new PregnantSolutionOsRu("PregnantSolutionOsRu");    //浸出液(富锇钌)
     public static final BLOCK_PregnantSolutionOsRu BLOCK_PregnantSolutionOsRu   = new BLOCK_PregnantSolutionOsRu(PregnantSolutionOsRu,"PregnantSolutionOsRu");    //吸收液(富锇钌)
 
     public static final AbsorptionLiquidRu AbsorptionLiquidRu     = new AbsorptionLiquidRu("AbsorptionLiquidRu");    //吸收液（富钌）
