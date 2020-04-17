@@ -110,13 +110,7 @@ item.Mainframe5.name=精英电脑主机
 item.Mainframe6.name=究极电脑主机
 item.Mainframe7.name=终极电脑主机
 
-item.StarPlatinum.name=Star Platinum
-item.CultureDishEmpty.name=Empty Culture Dish
-item.CultureDishMSC.name=Culture Dish (MSC)
-item.CultureDishStemCellEmbryonic.name=Culture Dish (Stem Cell Embryonic)
-item.CultureDishStemCellSomatic.name=Culture Dish (Stem Cell Somatic)
-item.MSCBasalMedium.name=MSC Basal Medium
-item.MSCSupplement.name=MSC Supplement
+item.StarPlatinum.name=白金之星
 
 item.CrushedPlatinumOre.name=粉碎铂矿
 item.WashedPlatinumOre.name=洗净铂矿
@@ -134,6 +128,32 @@ item.dustIridiumOxide.name=氧化铱粉
 item.dustRhodiumHydroxide.name=氢氧化铑粉
 item.dustAmmoniumChloroRhodium.name=氯铑酸铵粉
 
+#Bio circuit related
+item.CultureDishEmpty.name=培养基(空)
+item.CultureDishMSC.name=培养基(干细胞基液)
+item.CultureDishStemCellEmbryonic.name=接种后干细胞培养基
+item.CultureDishStemCellSomatic.name=干细胞培养基
+item.dustInorganicSaltMixture.name=无机盐混合物粉
+item.dustTinyInorganicSaltMixture.name=小撮无机盐混合物粉
+item.dustGlucose.name=葡萄糖粉
+item.StemCell.name=干细胞
+item.NeuronCell.name=神经细胞培养皿
+item.UnformedEmbryo.name=未成型胚胎
+item.Microchip.name=微型集成电路
+item.BioCircuit.name=生物电路板
+
+#points
+item.point1.name=1 信用点 (泛银河系通用)
+item.point5.name=5 信用点 (泛银河系通用)
+item.point10.name=10 信用点 (泛银河系通用)
+item.point50.name=50 信用点 (泛银河系通用)
+item.point100.name=100 信用点 (泛银河系通用)
+
+#CreativeTabs
+itemGroup.ElectronicTab=电子元件 | MoegAddon
+itemGroup.BlockTab=方块 | MoegAddon
+
+#Tiles
 tile.MainframeCluster1.name=低级巨型机组件
 tile.MainframeCluster2.name=基础巨型机组件
 tile.MainframeCluster3.name=进阶巨型机组件
@@ -144,6 +164,6 @@ tile.MainframeCluster7.name=终极巨型机组件
 
 tile.Flammableice.name=可燃冰
 
-#CreativeTabs
-itemGroup.ElectronicTab=电子元件 | MoegAddon
-itemGroup.BlockTab=方块 | MoegAddon
+#Fluids
+fluid.MSC.name=干细胞基液
+tile.MSC.name=干细胞基液

@@ -117,7 +117,7 @@ public class ItemLoader {
     public static ItemBase EpoxyPlate                      = new ItemBase("EpoxyPlate"); //电路基板 处理器主板
     public static ItemBase EpoxyCircuitBoard               = new ItemBase("EpoxyCircuitBoard");
     public static ItemBase FabricStrengthenedCircuitBoard  = new ItemBase("FabricStrengthenedCircuitBoard");
-    public static ItemBase BioCircuitBoard                 = new ItemBase("BioCircuitBoard");
+    //public static ItemBase BioCircuitBoard                 = new ItemBase("BioCircuitBoard");
     public static ItemBase BasicProcessorMainboard         = new ItemBase("BasicProcessorMainboard");
     public static ItemBase IntermediateProcessorMainboard  = new ItemBase("IntermediateProcessorMainboard");
     public static ItemBase AdvancedProcessorMainboard      = new ItemBase("AdvancedProcessorMainboard");
@@ -133,10 +133,6 @@ public class ItemLoader {
 
     //Misc
     public static ItemBase StarPlatinum = new ItemBase("StarPlatinum");
-    public static ItemBase CultureDishEmpty = new ItemBase("CultureDishEmpty");
-    public static ItemBase CultureDishMSC = new ItemBase("CultureDishMSC");
-    public static ItemBase CultureDishStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
-    public static ItemBase CultureDishStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
 
     //Platinum Production
     public static ItemBase CrushedPlatinumOre          = new ItemBase("CrushedPlatinumOre");          //粉碎铂矿
@@ -155,7 +151,12 @@ public class ItemLoader {
     public static ItemBase dustRhodiumHydroxide            = new ItemBase("dustRhodiumHydroxide");            //氢氧化铑
     public static ItemBase dustAmmoniumChloroRhodium       = new ItemBase("dustAmmoniumChloroRhodium");       //氯铑酸铵
 
-    //生物电路相关2
+    //Bio Circuit related
+    public static ItemBase CultureDishEmpty = new ItemBase("CultureDishEmpty");
+    public static ItemBase CultureDishMSC = new ItemBase("CultureDishMSC");
+    public static ItemBase CultureDishStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
+    public static ItemBase CultureDishStemCellSomatic = new ItemBase("CultureDishStemCellSomatic");
+
     public static ItemBase dustInorganicSaltMixture = new ItemBase("dustInorganicSaltMixture");               //无机盐混合物粉
     public static ItemBase dustTinyInorganicSaltMixture = new ItemBase("dustTinyInorganicSaltMixture");       //小撮无机盐混合物粉
     public static ItemBase dustGlucose = new ItemBase("dustGlucose");                                         //葡萄糖粉
@@ -164,4 +165,11 @@ public class ItemLoader {
     public static ItemBase UnformedEmbryo = new ItemBase("UnformedEmbryo");                                   //未成形胚胎
     public static ItemBase Microchip = new ItemBase("Microchip");                                             //微型芯片
     public static ItemBase BioCircuit = new ItemBase("BioCircuit");                                           //生物电路板
+
+    public static ItemBase point1 = new ItemBase("point1");
+    public static ItemBase point5 = new ItemBase("point5");
+    public static ItemBase point10 = new ItemBase("point10");
+    public static ItemBase point50 = new ItemBase("point50");
+    public static ItemBase point100 = new ItemBase("point100");
+
 }
