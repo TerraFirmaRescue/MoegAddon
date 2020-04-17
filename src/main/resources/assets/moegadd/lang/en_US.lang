@@ -111,12 +111,6 @@ item.Mainframe6.name=Mainframe Level 6
 item.Mainframe7.name=Mainframe Level 7
 
 item.StarPlatinum.name=Star Platinum
-item.CultureDishEmpty.name=Empty Culture Dish
-item.CultureDishMSC.name=Culture Dish (MSC)
-item.CultureDishStemCellEmbryonic.name=Culture Dish (Stem Cell Embryonic)
-item.CultureDishStemCellSomatic.name=Culture Dish (Stem Cell Somatic)
-item.MSCBasalMedium.name=MSC Basal Medium
-item.MSCSupplement.name=MSC Supplement
 
 item.CrushedPlatinumOre.name=Crushed Platinum Ore
 item.WashedPlatinumOre.name=Washed Platinum Ore
@@ -134,16 +128,37 @@ item.dustIridiumOxide.name=Iridium Oxide Dust
 item.dustRhodiumHydroxide.name=Rhodium Hydroxide Dust
 item.dustAmmoniumChloroRhodium.name=Ammonium Chloro Rhodium Dust
 
+#Bio circuit related
+item.CultureDishEmpty.name=Empty Culture Dish
+item.CultureDishMSC.name=Culture Dish (MSC)
+item.CultureDishStemCellEmbryonic.name=Culture Dish (Stem Cell Embryonic)
+item.CultureDishStemCellSomatic.name=Culture Dish (Stem Cell Somatic)
+item.dustInorganicSaltMixture.name=Inorganic Salt Mixture Dust
+item.dustTinyInorganicSaltMixture.name=Inorganic Salt Mixture Tiny Dust
+item.dustGlucose.name=Glucose Dust
+item.StemCell.name=Stem Cell
+item.NeuronCell.name=Neuron Cell
+item.UnformedEmbryo.name=Unformed Embryo
+item.Microchip.name=Microchip
+item.BioCircuit.name=Bio Circuit
+
+#points
+item.point1.name=1 Credit Point (Intergalactica Universal)
+item.point5.name=5 Credit Point (Intergalactica Universal)
+item.point10.name=10 Credit Point (Intergalactica Universal)
+item.point50.name=50 Credit Point (Intergalactica Universal)
+item.point100.name=100 Credit Point (Intergalactica Universal)
+
+#CreativeTabs
+itemGroup.ElectronicTab=Electronic Tab | MoegAddon
+itemGroup.BlockTab=Block Tab | MoegAddon
+
+#Tiles
 tile.MainframeCluster1.name=Mainframe Cluster Level 1
 tile.MainframeCluster2.name=Mainframe Cluster Level 2
 tile.MainframeCluster3.name=Mainframe Cluster Level 3
 tile.MainframeCluster4.name=Mainframe Cluster Level 4
 tile.MainframeCluster5.name=Mainframe Cluster Level 5
 tile.MainframeCluster6.name=Mainframe Cluster Level 6
-tile.MainframeCluster7.name=Mainframe Cluster Level 7 
-
+tile.MainframeCluster7.name=Mainframe Cluster Level 7
 tile.Flammableice.name=Flammable Ice
-
-#CreativeTabs
-itemGroup.ElectronicTab=Electronic Tab | MoegAddon
-itemGroup.BlockTab=Block Tab | MoegAddon
