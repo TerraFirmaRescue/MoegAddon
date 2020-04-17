@@ -35,5 +35,9 @@ public class FluidLoader {
     public static final ChloroRhodiumAcid ChloroRhodiumAcid      = new ChloroRhodiumAcid("ChloroRhodiumAcid");    //氯钌酸
     public static final BLOCK_ChloroRhodiumAcid BLOCK_ChloroRhodiumAcid      = new BLOCK_ChloroRhodiumAcid(ChloroRhodiumAcid,"ChloroRhodiumAcid");    //氯钌酸
 
+    //以下为生物电路相关的一些流体
+    public static final AmylumSolution AmylumSolution = new AmylumSolution("AmylumSolution");       //淀粉溶液
+    public static final BLOCK_AmylumSolution BLOCK_AmylumSolution = new BLOCK_AmylumSolution (AmylumSolution,"AmylumSolution");
+    //草，我懒得实例化了，先push了,class没问题
 }
 
