@@ -1,7 +1,7 @@
 [
 {
   "modid": "moegadd",
-  "name": "MoegAddon",
+  "name": "MoegAddon_TFR",
   "description": "Addon to Modpack <Terrafirma: Rescue>",
   "version": "${version}",
   "mcversion": "${mcversion}",
