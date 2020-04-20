@@ -38,6 +38,38 @@ public class FluidLoader {
     //以下为生物电路相关的一些流体
     public static final AmylumSolution AmylumSolution = new AmylumSolution("AmylumSolution");       //淀粉溶液
     public static final BLOCK_AmylumSolution BLOCK_AmylumSolution = new BLOCK_AmylumSolution (AmylumSolution,"AmylumSolution");
-    //草，我懒得实例化了，先push了,class没问题
+
+    public static final BoneMarrow BoneMarrow = new BoneMarrow("BomeMarrow");      //骨髓血
+    public static final BLOCK_BoneMarrow BLOCK_BONE_MARROW = new BLOCK_BoneMarrow(BoneMarrow,"BoneMarrow");
+
+    public static final DifferentiationPromotingProteinNeuron DifferentiationPromotingProteinNeuron = new DifferentiationPromotingProteinNeuron("DifferentiationPromotingProteinNeuron");   //促分化蛋白(神经细胞)
+    public static final BLOCK_DifferentiationPromotingProteinNeuron BLOCK_DifferentiationPromotingProteinNeuron = new BLOCK_DifferentiationPromotingProteinNeuron(DifferentiationPromotingProteinNeuron,"DifferentiationPromotingProteinNeuron");
+
+    public static final HexamethyleneDiamine HexamethyleneDiamine = new HexamethyleneDiamine("HexamethyleneDiamine");   //己二胺
+    public static final BLOCK_HexamethyleneDiamine BLOCK_HexamethyleneDiamine = new BLOCK_HexamethyleneDiamine(HexamethyleneDiamine,"HexamethyleneDiamine");
+
+    public static final HormoneSolution HormoneSolution = new HormoneSolution("HormoneSolution");   //激素溶液
+    public static final BLOCK_HormoneSolution BLOCK_HormoneSolution = new BLOCK_HormoneSolution(HormoneSolution,"HormoneSolution");
+
+    public static final MSC MSC = new MSC("MSC");   //干细胞基液
+    public static final BLOCK_MSC BLOCK_MSC = new BLOCK_MSC(MSC,"MSC");
+
+    public static final MSCBasalMedium MSCBasalMedium = new MSCBasalMedium("MSCBasalMedium");   //干细胞基础培养基
+    public static final BLOCK_MSCBasalMedium BLOCK_MSCBasalMedium = new BLOCK_MSCBasalMedium(MSCBasalMedium,"MSCBasalMedium");
+
+    public static final MSCSupplement MSCSupplement = new MSCSupplement("MSCSupplement");
+    public static final BLOCK_MSCSupplement BLOCK_MSCSupplement = new BLOCK_MSCSupplement(MSCSupplement,"MSCSupplement");
+
+    public static Polyimide Polyimide = new Polyimide("Polyimide");     //聚酰亚胺
+    public static BLOCK_Polyimide BLOCK_Polyimide = new BLOCK_Polyimide(Polyimide,"Polyimide");
+
+    public static PyromelliticDianhydride PyromelliticDianhydride = new PyromelliticDianhydride("PyromelliticDianhydride");     //均苯四甲酸二酐
+    public static BLOCK_PyromelliticDianhydride BLOCK_PyromelliticDianhydride = new BLOCK_PyromelliticDianhydride(PyromelliticDianhydride,"PyromelliticDianhydride");
+
+    public static SPSS SPSS = new SPSS("SPSS");     //生理盐水
+    public static BLOCK_SPSS BLOCK_SPSS = new BLOCK_SPSS(SPSS,"SPSS");
+
+    public static VitaminSolution VitaminSolution = new VitaminSolution("VitaminSolution");     //维生素溶液
+    public static BLOCK_VitaminSolution BLOCK_VitaminSolution = new BLOCK_VitaminSolution(VitaminSolution,"VitaminSolution");
 }
 
