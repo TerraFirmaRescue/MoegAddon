@@ -150,6 +150,7 @@ public class ItemLoader {
     public static ItemBase dustIridiumOxide                = new ItemBase("dustIridiumOxide");                //氧化铱
     public static ItemBase dustRhodiumHydroxide            = new ItemBase("dustRhodiumHydroxide");            //氢氧化铑
     public static ItemBase dustAmmoniumChloroRhodium       = new ItemBase("dustAmmoniumChloroRhodium");       //氯铑酸铵
+	public static ItemBase dustNH4Cl                       = new ItemBase("dustNH4Cl");                       //氯铑酸铵
 
     //Bio Circuit related
     public static ItemBase CultureDishEmpty = new ItemBase("CultureDishEmpty");
