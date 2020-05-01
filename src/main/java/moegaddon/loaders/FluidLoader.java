@@ -21,7 +21,10 @@ public class FluidLoader {
     public static final BLOCK_RhodiumSulfideSolution BLOCK_RhodiumSulfideSolution = new BLOCK_RhodiumSulfideSolution(RhodiumSulfideSolution,"RhodiumSulfideSolution");    //硫化铑溶液
 
     public static final PregnantSolutionOsRu PregnantSolutionOsRu   = new PregnantSolutionOsRu("PregnantSolutionOsRu");    //浸出液(富锇钌)
-    public static final BLOCK_PregnantSolutionOsRu BLOCK_PregnantSolutionOsRu   = new BLOCK_PregnantSolutionOsRu(PregnantSolutionOsRu,"PregnantSolutionOsRu");    //吸收液(富锇钌)
+    public static final BLOCK_PregnantSolutionOsRu BLOCK_PregnantSolutionOsRu   = new BLOCK_PregnantSolutionOsRu(PregnantSolutionOsRu,"PregnantSolutionOsRu");    //浸出液(富锇钌)
+
+    public static final AbsorptionLiquidOsRu AbsorptionLiquidOsRu = new AbsorptionLiquidOsRu("AbsorptionLiquidOsRu");   //吸收液(富锇铑)
+    public static final BLOCK_AbsorptionLiquidOsRu BLOCK_AbsorptionLiquidOsRu = new BLOCK_AbsorptionLiquidOsRu(AbsorptionLiquidOsRu,"AbsorptionLiquidOsRu");
 
     public static final AbsorptionLiquidRu AbsorptionLiquidRu     = new AbsorptionLiquidRu("AbsorptionLiquidRu");    //吸收液（富钌）
     public static final BLOCK_PregnantSolutionOsRu BLOCK_AbsorptionLiquidRu     = new BLOCK_PregnantSolutionOsRu(AbsorptionLiquidRu,"AbsorptionLiquidRu");    //吸收液（富钌）
@@ -32,8 +35,11 @@ public class FluidLoader {
     public static final OsmiumTetroxide OsmiumTetroxide        = new OsmiumTetroxide("OsmiumTetroxide");    //四氧化锇
     public static final BLOCK_OsmiumTetroxide BLOCK_OsmiumTetroxide        = new BLOCK_OsmiumTetroxide(OsmiumTetroxide,"OsmiumTetroxide");    //四氧化锇
 
-    public static final ChloroRhodiumAcid ChloroRhodiumAcid      = new ChloroRhodiumAcid("ChloroRhodiumAcid");    //氯钌酸
-    public static final BLOCK_ChloroRhodiumAcid BLOCK_ChloroRhodiumAcid      = new BLOCK_ChloroRhodiumAcid(ChloroRhodiumAcid,"ChloroRhodiumAcid");    //氯钌酸
+    public static final ChloroRhodiumAcid ChloroRhodiumAcid      = new ChloroRhodiumAcid("ChloroRhodiumAcid");    //氯铑酸
+    public static final BLOCK_ChloroRhodiumAcid BLOCK_ChloroRhodiumAcid      = new BLOCK_ChloroRhodiumAcid(ChloroRhodiumAcid,"ChloroRhodiumAcid");    //氯铑酸
+
+    public static final EvaporatedliquidOs EvaporatedliquidOs = new EvaporatedliquidOs("EvaporatedliquidOs");       //蒸出液(富锇)
+    public static final BLOCK_EvaporatedliquidOs BLOCK_EvaporatedliquidOs = new BLOCK_EvaporatedliquidOs(EvaporatedliquidOs,"EvaporatedliquidOs");
 
     //以下为生物电路相关的一些流体
     public static final AmylumSolution AmylumSolution = new AmylumSolution("AmylumSolution");       //淀粉溶液
