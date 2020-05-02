@@ -191,6 +191,7 @@ fluid.PyromelliticDianhydride.name=均苯四甲酸二酐
 fluid.DifferentiationPromotingProteinNeuron.name=促分化蛋白质(神经细胞)
 fluid.EvaporatedliquidOs.name=蒸出液(富锇)
 fluid.AbsorptionLiquidOsRu.name=吸收液(富锇铑)
+fluid.SodiumOsmiumHexachloride.name=六氯合锇酸铵溶液
 
 tile.SolutionRichPtPa.name=富铂钯溶液
 tile.SolutionRichPa.name=富钯溶液
@@ -216,3 +217,4 @@ tile.PyromelliticDianhydride.name=均苯四甲酸二酐
 tile.DifferentiationPromotingProteinNeuron.name=促分化蛋白质(神经细胞)
 tile.EvaporatedliquidOs.name=蒸出液(富锇)
 tile.AbsorptionLiquidOsRu.name=吸收液(富锇铑)
+tile.SodiumOsmiumHexachloride.name=六氯合锇酸铵溶液
