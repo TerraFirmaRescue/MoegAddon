@@ -165,6 +165,11 @@ tile.MainframeCluster6.name=究极巨型机组件
 tile.MainframeCluster7.name=终极巨型机组件
 
 tile.Flammableice.name=可燃冰
+tile.PlacerPlatinumOre.name=砂铂矿
+tile.BraggiteOre.name=硫镍钯铂矿
+tile.AtokiteOre.name=锡铅钯铂矿
+tile.MasloviteOre.name=碲铋钯铂矿
+tile.OsmiridiumOre.name=锇铱矿
 
 #Fluids
 fluid.SolutionRichPtPa.name=富铂钯溶液

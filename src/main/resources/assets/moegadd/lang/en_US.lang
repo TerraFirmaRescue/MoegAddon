@@ -162,6 +162,11 @@ tile.MainframeCluster5.name=Mainframe Cluster Level 5
 tile.MainframeCluster6.name=Mainframe Cluster Level 6
 tile.MainframeCluster7.name=Mainframe Cluster Level 7
 tile.Flammableice.name=Flammable Ice
+tile.PlacerPlatinumOre.name=PlacerPlatinumOre
+tile.BraggiteOre.name=BraggiteOre
+tile.AtokiteOre.name=Atokite
+tile.MasloviteOre.name=Maslovite
+tile.OsmiridiumOre.name=OsmiridiumOre
 
 #Fluids
 fluid.SolutionRichPtPa.name=Rich Platinum Palladium Solution

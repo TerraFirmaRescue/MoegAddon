@@ -18,5 +18,4 @@ public class FlammableiceBlock extends Block{
 	    GameRegistry.registerBlock(this,"Flammableice");
 	}
 
-
 }
