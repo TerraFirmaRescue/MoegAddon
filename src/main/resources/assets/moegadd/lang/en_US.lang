@@ -127,6 +127,16 @@ item.dustAmmoniumIridiumChloride.name=Ammonium Iridium Chloride Dust
 item.dustIridiumOxide.name=Iridium Oxide Dust
 item.dustRhodiumHydroxide.name=Rhodium Hydroxide Dust
 item.dustAmmoniumChloroRhodium.name=Ammonium Chloro Rhodium Dust
+item.CrushedPlacerPlatinumOre.name=CrushedPlacerPlatinumOre
+item.WashedPlacerPlatinumOre.name=WashedPlacerPlatinumOre
+item.CrushedBraggiteOre.name=CrushedBraggiteOre
+item.WashedBraggiteOre.name=WashedBraggiteOre
+item.CrushedAtokiteOre.name=CrushedAtokiteOre
+item.WashedAtokiteOre.name=WashedAtokiteOre
+item.CrushedMasloviteOre.name=CrushedMasloviteOre
+item.WashedMasloviteOre.name=WashedMasloviteOre
+item.CrushedOsmiridiumOre.name=CrushedOsmiridiumOre
+item.WashedOsmiridiumOre.name=WashedOsmiridiumOre
 
 #Bio circuit related
 item.CultureDishEmpty.name=Empty Culture Dish
