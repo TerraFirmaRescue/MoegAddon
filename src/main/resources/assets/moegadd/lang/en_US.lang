@@ -149,6 +149,9 @@ item.point10.name=10 Credit Point (Intergalactica Universal)
 item.point50.name=50 Credit Point (Intergalactica Universal)
 item.point100.name=100 Credit Point (Intergalactica Universal)
 
+#TFCrelated
+item.BlastPreparedIronOre.name=Blast Prepared Iron Ore
+
 #CreativeTabs
 itemGroup.ElectronicTab=Item Tab | MoegAddon
 itemGroup.BlockTab=Block Tab | MoegAddon

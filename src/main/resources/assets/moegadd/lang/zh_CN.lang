@@ -145,11 +145,14 @@ item.Microchip.name=微型集成电路
 item.BioCircuit.name=生物电路板
 
 #points
-item.point1.name=1 信用点 (泛银河系通用)
-item.point5.name=5 信用点 (泛银河系通用)
-item.point10.name=10 信用点 (泛银河系通用)
-item.point50.name=50 信用点 (泛银河系通用)
-item.point100.name=100 信用点 (泛银河系通用)
+item.point1.name=一信用点(泛银河系通用)
+item.point5.name=五信用点(泛银河系通用)
+item.point10.name=十信用点(泛银河系通用)
+item.point50.name=五十信用点(泛银河系通用)
+item.point100.name=一百信用点(泛银河系通用)
+
+#TFCrelated
+item.BlastPreparedIronOre.name=冶钢预制铁矿
 
 #CreativeTabs
 itemGroup.ElectronicTab=物品 | MoegAddon
