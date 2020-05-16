@@ -130,6 +130,17 @@ item.dustAmmoniumChloroRhodium.name=氯铑酸铵粉
 item.dustNH4Cl.name=氯化铵粉
 item.dustSodiumOsmiumHexachloride.name=六氯合锇酸钠
 
+item.CrushedPlacerPlatinumOre.name=粉碎砂铂矿
+item.WashedPlacerPlatinumOre.name=洗净砂铂矿
+item.CrushedBraggiteOre.name=粉碎硫镍钯铂矿
+item.WashedBraggiteOre.name=洗净硫镍钯铂矿
+item.CrushedAtokiteOre.name=粉碎锡铅钯铂矿
+item.WashedAtokiteOre.name=洗净锡铅钯铂矿
+item.CrushedMasloviteOre.name=粉碎碲铋铂钯矿
+item.WashedMasloviteOre.name=洗净碲铋铂钯矿
+item.CrushedOsmiridiumOre.name=粉碎锇铱矿
+item.WashedOsmiridiumOre.name=洗净锇铱矿
+
 #Bio circuit related
 item.CultureDishEmpty.name=培养皿(空)
 item.CultureDishMSC.name=培养皿(干细胞基液)

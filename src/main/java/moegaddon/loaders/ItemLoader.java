@@ -151,7 +151,17 @@ public class ItemLoader {
     public static ItemBase dustRhodiumHydroxide            = new ItemBase("dustRhodiumHydroxide");            //氢氧化铑
     public static ItemBase dustAmmoniumChloroRhodium       = new ItemBase("dustAmmoniumChloroRhodium");       //氯铑酸铵
 	public static ItemBase dustNH4Cl                       = new ItemBase("dustNH4Cl");                       //氯化铵
-    public static ItemBase dustSodiumOsmiumHexachloride    = new ItemBase("dustSodiumOsmiumHexachloride");   //六氯合锇酸钠
+    public static ItemBase dustSodiumOsmiumHexachloride    = new ItemBase("dustSodiumOsmiumHexachloride");    //六氯合锇酸钠
+    public static ItemBase CrushedPlacerPlatinumOre = new ItemBase("CrushedPlacerPlatinumOre");
+    public static ItemBase WashedPlacerPlatinumOre = new ItemBase("WashedPlacerPlatinumOre");                 //砂铂矿
+    public static ItemBase CrushedBraggiteOre = new ItemBase("CrushedBraggiteOre");
+    public static ItemBase WashedBraggiteOre = new ItemBase("WashedBraggiteOre");                             //硫镍钯铂矿
+    public static ItemBase CrushedAtokiteOre = new ItemBase("CrushedAtokiteOre");
+    public static ItemBase WashedAtokiteOre = new ItemBase("WashedAtokiteOre");                               //锡铅钯铂矿
+    public static ItemBase CrushedMasloviteOre = new ItemBase("CrushedMasloviteOre");
+    public static ItemBase WashedMasloviteOre = new ItemBase("WashedMasloviteOre");                           //碲铋铂钯矿
+    public static ItemBase CrushedOsmiridiumOre = new ItemBase("CrushedOsmiridiumOre");
+    public static ItemBase WashedOsmiridiumOre = new ItemBase("WashedOsmiridiumOre");                         //锇铱矿
 
 
     //Bio Circuit related
