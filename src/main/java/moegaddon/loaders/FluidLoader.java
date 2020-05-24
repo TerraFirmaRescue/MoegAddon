@@ -8,6 +8,7 @@ import moegaddon.fluid.fluidBlocks.*;
 import moegaddon.fluid.fluids.*;
 
 public class FluidLoader {
+    /*
     public static final SolutionRichPtPa SolutionRichPtPa       = new SolutionRichPtPa("SolutionRichPtPa");    //富铂钯溶液
     public static final BLOCK_SolutionRichPtPa BLOCK_SolutionRichPtPa       = new BLOCK_SolutionRichPtPa(SolutionRichPtPa,"SolutionRichPtPa");    //富铂钯溶液
 
@@ -80,5 +81,6 @@ public class FluidLoader {
 
     public static VitaminSolution VitaminSolution = new VitaminSolution("VitaminSolution");     //维生素溶液
     public static BLOCK_VitaminSolution BLOCK_VitaminSolution = new BLOCK_VitaminSolution(VitaminSolution,"VitaminSolution");
+    */
 }
 
