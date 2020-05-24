@@ -159,6 +159,9 @@ item.point10.name=10 Credit Point (Intergalactica Universal)
 item.point50.name=50 Credit Point (Intergalactica Universal)
 item.point100.name=100 Credit Point (Intergalactica Universal)
 
+#TFCrelated
+item.BlastPreparedIronOre.name=Blast Prepared Iron Ore
+
 #CreativeTabs
 itemGroup.ElectronicTab=Item Tab | MoegAddon
 itemGroup.BlockTab=Block Tab | MoegAddon
@@ -195,7 +198,7 @@ fluid.MSC.name=MSC
 fluid.BoneMarrow.name=Bone Marrow
 fluid.SPSS.name=Stroke-physiological Saline Solution
 fluid.AmylumSolution.name=Amylum Solution
-fluid.VitaminBSolution.name=Vitamin B Solution
+fluid.VitaminSolution.name=Vitamin B Solution
 fluid.HormoneSolution.name=Hormone Solution
 fluid.Polyimide.name=Polyimide
 fluid.HexamethyleneDiamine.name=Hexamethylene Diamine

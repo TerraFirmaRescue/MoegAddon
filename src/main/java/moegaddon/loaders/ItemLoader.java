@@ -179,10 +179,14 @@ public class ItemLoader {
     public static ItemBase Microchip = new ItemBase("Microchip");                                             //微型芯片
     public static ItemBase BioCircuit = new ItemBase("BioCircuit");                                           //生物电路板
 
+    //Coins related
     public static ItemBase point1 = new ItemBase("point1");
     public static ItemBase point5 = new ItemBase("point5");
     public static ItemBase point10 = new ItemBase("point10");
     public static ItemBase point50 = new ItemBase("point50");
     public static ItemBase point100 = new ItemBase("point100");
+
+    //TFC addon
+    public static ItemBase BlastPreparedIronOre = new ItemBase("BlastPreparedIronOre");
 
 }

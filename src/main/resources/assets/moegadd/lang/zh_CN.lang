@@ -156,11 +156,14 @@ item.Microchip.name=微型集成电路
 item.BioCircuit.name=生物电路板
 
 #points
-item.point1.name=1 信用点 (泛银河系通用)
-item.point5.name=5 信用点 (泛银河系通用)
-item.point10.name=10 信用点 (泛银河系通用)
-item.point50.name=50 信用点 (泛银河系通用)
-item.point100.name=100 信用点 (泛银河系通用)
+item.point1.name=一信用点(泛银河系通用)
+item.point5.name=五信用点(泛银河系通用)
+item.point10.name=十信用点(泛银河系通用)
+item.point50.name=五十信用点(泛银河系通用)
+item.point100.name=一百信用点(泛银河系通用)
+
+#TFCrelated
+item.BlastPreparedIronOre.name=冶钢预制铁矿
 
 #CreativeTabs
 itemGroup.ElectronicTab=物品 | MoegAddon
@@ -199,7 +202,7 @@ fluid.MSC.name=干细胞培养基液
 fluid.BoneMarrow.name=骨髓血
 fluid.SPSS.name=生理盐水
 fluid.AmylumSolution.name=淀粉溶液
-fluid.VitaminBSolution.name=维生素B溶液
+fluid.VitaminSolution.name=维生素B溶液
 fluid.HormoneSolution.name=激素溶液
 fluid.Polyimide.name=聚酰亚胺
 fluid.HexamethyleneDiamine.name=己二胺

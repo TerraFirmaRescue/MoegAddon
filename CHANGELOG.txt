@@ -2,7 +2,7 @@ Changelog for MoegAddon 1.7.10
 
 1。05
 Added more bio stuff
-Added Placer Platinum Ore
+Added More Platinum Ore
 
 1.04
 Added Platinum Metal Production process items
