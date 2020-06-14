@@ -3,7 +3,7 @@
   "modid": "moegadd",
   "name": "MoegAddon_TFR",
   "description": "Addon to Modpack <Terrafirma: Rescue>",
-  "version": "${version}",
+  "version": "1.06",
   "mcversion": "${mcversion}",
   "url": "https://github.com/yuesha-yc/MoegAddon",
   "updateUrl": "https://github.com/yuesha-yc/MoegAddon/releases",
