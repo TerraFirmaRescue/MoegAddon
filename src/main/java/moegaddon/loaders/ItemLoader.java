@@ -164,7 +164,7 @@ public class ItemLoader {
     public static ItemBase WashedOsmiridiumOre = new ItemBase("WashedOsmiridiumOre");                         //锇铱矿
 
 
-    //Bio Circuit related
+/*    //Bio Circuit related
     public static ItemBase CultureDishEmpty = new ItemBase("CultureDishEmpty");
     public static ItemBase CultureDishMSC = new ItemBase("CultureDishMSC");
     public static ItemBase CultureDishStemCellEmbryonic = new ItemBase("CultureDishStemCellEmbryonic");
@@ -182,7 +182,7 @@ public class ItemLoader {
     public static ItemBase LaurylSulfate = new ItemBase("LaurylSulfate") ;                                    //硫酸化月桂醇
     public static ItemBase SDS = new ItemBase("SDS");                                                         //十二烷基硫酸钠
     //新加的三个物品将在生物相关物品迁移完成后一起注释掉，为统一操作而添加
-
+*/
     //Coins related
     public static ItemBase point1 = new ItemBase("point1");
     public static ItemBase point5 = new ItemBase("point5");
