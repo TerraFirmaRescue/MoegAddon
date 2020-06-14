@@ -161,6 +161,25 @@ item.point100.name=100 Credit Point (Intergalactica Universal)
 
 #TFCrelated
 item.BlastPreparedIronOre.name=Blast Prepared Iron Ore
+item.QuartzMixture.name=Quartz Mixture
+item.RoughQuickLime.name=Rough Quicklime
+item.BlackSaltpetre.name=Black Saltpetre
+item.RoughSodaAsh.name=Rough Soda Ash
+item.RoughCausticSoda.name=Rough Caustic Soda
+item.CeramicBlockMold.name=Ceramic Block Mold
+item.CeramicBlockMoldFull.name=Ceramic Block Mold (Full)
+item.CeramicBlockMoldMoltenGlass.name=Ceramic Block Mold (Molten Glass)
+item.CeramicBottleMold.name=Ceramic Bottle Mold
+item.CeramicBottleMoldFull.name=Ceramic Bottle Mold (Full)
+item.CeramicBottleMoldMoltenGlass.name=Ceramic Bottle Mold (Molten Glass)
+
+#MEDs
+item.MED0_1.name=0.1 MED
+item.MED1.name=1 MED
+item.MED5.name=5 MED
+item.MED10.name=10 MED
+item.MED50.name=50 MED
+item.MED100.name=100 MED
 
 #CreativeTabs
 itemGroup.ElectronicTab=Item Tab | MoegAddon

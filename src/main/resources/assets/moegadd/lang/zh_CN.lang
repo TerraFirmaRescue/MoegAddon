@@ -164,6 +164,25 @@ item.point100.name=一百信用点(泛银河系通用)
 
 #TFCrelated
 item.BlastPreparedIronOre.name=冶钢预制铁矿
+item.QuartzMixture.name=石英混合物
+item.RoughQuickLime.name=粗制生石灰
+item.BlackSaltpetre.name=黑硝
+item.RoughSodaAsh.name=粗制纯碱
+item.RoughCausticSoda.name=粗制烧碱
+item.CeramicBlockMold.name=陶瓷块模具
+item.CeramicBlockMoldFull.name=陶瓷块模具(满)
+item.CeramicBlockMoldMoltenGlass.name=陶瓷块模具(融化玻璃)
+item.CeramicBottleMold.name=陶瓷瓶模具
+item.CeramicBottleMoldFull.name=陶瓷瓶模具(满)
+item.CeramicBottleMoldMoltenGlass.name=陶瓷瓶模具(融化玻璃)
+
+#MEDs
+item.MED0_1.name=0.1 Moeg元
+item.MED1.name=1 Moeg元
+item.MED5.name=5 Moeg元
+item.MED10.name=10 Moeg元
+item.MED50.name=50 Moeg元
+item.MED100.name=100 Moeg元
 
 #CreativeTabs
 itemGroup.ElectronicTab=物品 | MoegAddon

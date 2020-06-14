@@ -8,6 +8,7 @@ import moegaddon.fluid.fluidBlocks.*;
 import moegaddon.fluid.fluids.*;
 
 public class FluidLoader {
+    /*
     public static final SolutionRichPtPa SolutionRichPtPa       = new SolutionRichPtPa("SolutionRichPtPa");    //富铂钯溶液
     public static final BLOCK_SolutionRichPtPa BLOCK_SolutionRichPtPa       = new BLOCK_SolutionRichPtPa(SolutionRichPtPa,"SolutionRichPtPa");    //富铂钯溶液
 
@@ -43,6 +44,7 @@ public class FluidLoader {
 
     public static final SodiumOsmiumHexachloride SodiumOsmiumHexachloride = new SodiumOsmiumHexachloride("SodiumOsmiumHexachloride");       //六氯合锇酸铵溶液
     public static final BLOCK_SodiumOsmiumHexachloride BLOCK_SodiumOsmiumHexachloride = new BLOCK_SodiumOsmiumHexachloride(SodiumOsmiumHexachloride,"SodiumOsmiumHexachloride");
+
 
     //以下为生物电路相关的一些流体
     public static final AmylumSolution AmylumSolution = new AmylumSolution("AmylumSolution");       //淀粉溶液
@@ -80,5 +82,6 @@ public class FluidLoader {
 
     public static VitaminSolution VitaminSolution = new VitaminSolution("VitaminSolution");     //维生素溶液
     public static BLOCK_VitaminSolution BLOCK_VitaminSolution = new BLOCK_VitaminSolution(VitaminSolution,"VitaminSolution");
+    */
 }
 

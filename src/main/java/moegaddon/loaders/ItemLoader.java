@@ -186,7 +186,27 @@ public class ItemLoader {
     public static ItemBase point50 = new ItemBase("point50");
     public static ItemBase point100 = new ItemBase("point100");
 
+    //MEDs Mo Eg Dollar
+    public static ItemBase MED0_1 = new ItemBase("MED0_1");
+    public static ItemBase MED1 = new ItemBase("MED1");
+    public static ItemBase MED5 = new ItemBase("MED5");
+    public static ItemBase MED10 = new ItemBase("MED10");
+    public static ItemBase MED50 = new ItemBase("MED50");
+    public static ItemBase MED100 = new ItemBase("MED100");
+
+
     //TFC addon
     public static ItemBase BlastPreparedIronOre = new ItemBase("BlastPreparedIronOre");
+    public static ItemBase QuartzMixture = new ItemBase("QuartzMixture");
+    public static ItemBase RoughQuickLime = new ItemBase("RoughQuickLime");
+    public static ItemBase BlackSaltpetre = new ItemBase("BlackSaltpetre");
+    public static ItemBase RoughSodaAsh = new ItemBase("RoughSodaAsh");
+    public static ItemBase RoughCausticSoda = new ItemBase("RoughCausticSoda");
+    public static ItemBase CeramicBlockMold = new ItemBase("CeramicBlockMold");
+    public static ItemBase CeramicBlockMoldFull = new ItemBase("CeramicBlockMoldFull");
+    public static ItemBase CeramicBlockMoldMoltenGlass = new ItemBase("CeramicBlockMoldMoltenGlass");
+    public static ItemBase CeramicBottleMold = new ItemBase("CeramicBottleMold");
+    public static ItemBase CeramicBottleMoldFull = new ItemBase("CeramicBottleMoldFull");
+    public static ItemBase CeramicBottleMoldMoltenGlass = new ItemBase("CeramicBottleMoldMoltenGlass");
 
 }
