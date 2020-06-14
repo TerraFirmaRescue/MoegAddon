@@ -45,6 +45,7 @@ public class FluidLoader {
     public static final SodiumOsmiumHexachloride SodiumOsmiumHexachloride = new SodiumOsmiumHexachloride("SodiumOsmiumHexachloride");       //六氯合锇酸铵溶液
     public static final BLOCK_SodiumOsmiumHexachloride BLOCK_SodiumOsmiumHexachloride = new BLOCK_SodiumOsmiumHexachloride(SodiumOsmiumHexachloride,"SodiumOsmiumHexachloride");
 
+
     //以下为生物电路相关的一些流体
     public static final AmylumSolution AmylumSolution = new AmylumSolution("AmylumSolution");       //淀粉溶液
     public static final BLOCK_AmylumSolution BLOCK_AmylumSolution = new BLOCK_AmylumSolution (AmylumSolution,"AmylumSolution");
