@@ -24,7 +24,7 @@ public class FluidLoader {
     public static final PregnantSolutionOsRu PregnantSolutionOsRu   = new PregnantSolutionOsRu("PregnantSolutionOsRu");    //浸出液(富锇钌)
     public static final BLOCK_PregnantSolutionOsRu BLOCK_PregnantSolutionOsRu   = new BLOCK_PregnantSolutionOsRu(PregnantSolutionOsRu,"PregnantSolutionOsRu");    //浸出液(富锇钌)
 
-    public static final AbsorptionLiquidOsRu AbsorptionLiquidOsRu = new AbsorptionLiquidOsRu("AbsorptionLiquidOsRu");   //吸收液(富锇铑)
+    public static final AbsorptionLiquidOsRu AbsorptionLiquidOsRu = new AbsorptionLiquidOsRu("AbsorptionLiquidOsRu");   //吸收液(富锇钌)
     public static final BLOCK_AbsorptionLiquidOsRu BLOCK_AbsorptionLiquidOsRu = new BLOCK_AbsorptionLiquidOsRu(AbsorptionLiquidOsRu,"AbsorptionLiquidOsRu");
 
     public static final AbsorptionLiquidRu AbsorptionLiquidRu     = new AbsorptionLiquidRu("AbsorptionLiquidRu");    //吸收液（富钌）

@@ -178,6 +178,10 @@ public class ItemLoader {
     public static ItemBase UnformedEmbryo = new ItemBase("UnformedEmbryo");                                   //未成形胚胎
     public static ItemBase Microchip = new ItemBase("Microchip");                                             //微型芯片
     public static ItemBase BioCircuit = new ItemBase("BioCircuit");                                           //生物电路板
+    public static ItemBase PrecisionManipulator = new ItemBase("PrecisionManipulator");                       //精密机械臂
+    public static ItemBase LaurylSulfate = new ItemBase("LaurylSulfate") ;                                    //硫酸化月桂醇
+    public static ItemBase SDS = new ItemBase("SDS");                                                         //十二烷基硫酸钠
+    //新加的三个物品将在生物相关物品迁移完成后一起注释掉，为统一操作而添加
 
     //Coins related
     public static ItemBase point1 = new ItemBase("point1");
