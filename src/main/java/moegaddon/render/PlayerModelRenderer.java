@@ -16,7 +16,7 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import static moegaddon.MoegAddon.RES_PATH;
 
 public class PlayerModelRenderer extends RenderPlayer {
-    private final ResourceLocation[] mResources = new ResourceLocation[] {new ResourceLocation(RES_PATH + "model/BrainTech.png"), new ResourceLocation(RES_PATH + "model/Silver.png"), new ResourceLocation(RES_PATH + "model/MrBrain.png"), new ResourceLocation(RES_PATH + "model/Dev.png"), new ResourceLocation(RES_PATH + "model/Gold.png")};
+    private final ResourceLocation[] mResources = new ResourceLocation[] {new ResourceLocation(RES_PATH + "model/Dev.png"), new ResourceLocation(RES_PATH + "model/Silver.png"), new ResourceLocation(RES_PATH + "model/Gold.png")};
     private final Collection<String> mSupporterListSilver, mSupporterListGold;
 
     public PlayerModelRenderer(Collection<String> aSupporterListSilver, Collection<String> aSupporterListGold) {
@@ -27,16 +27,19 @@ public class PlayerModelRenderer extends RenderPlayer {
 
     private ResourceLocation getResource(String aPlayer) {
         aPlayer = aPlayer.toLowerCase();
-        if (aPlayer.equalsIgnoreCase("Yuesha_Kev14"))   return mResources[3];
-        if (aPlayer.equalsIgnoreCase("YueSha"))   return mResources[3];
-        if (aPlayer.equalsIgnoreCase("Evanvenir"))   	return mResources[3];
-        if (aPlayer.equalsIgnoreCase("Evan"))   	return mResources[3];
-        if (aPlayer.equalsIgnoreCase("duck_egg"))     return mResources[3];
-        if (aPlayer.equalsIgnoreCase("dashuaibia"))       return mResources[3];
-        if (aPlayer.equalsIgnoreCase("HDHDHD_"))     return mResources[3];
-        if (mSupporterListGold.contains(aPlayer))       return mResources[4];
+        if (aPlayer.equalsIgnoreCase("Yuesha_Kev14"))   return mResources[0];
+        if (aPlayer.equalsIgnoreCase("YueSha"))   return mResources[0];
+        if (aPlayer.equalsIgnoreCase("Evanvenir"))   	return mResources[0];
+        if (aPlayer.equalsIgnoreCase("Evan"))   	return mResources[0];
+        if (aPlayer.equalsIgnoreCase("duck_egg"))     return mResources[0];
+        if (aPlayer.equalsIgnoreCase("dashuaibia"))       return mResources[0];
+        if (aPlayer.equalsIgnoreCase("HDHDHD_"))     return mResources[0];
+        if (aPlayer.equalsIgnoreCase("lei_yu"))     return mResources[0];
+        if (aPlayer.equalsIgnoreCase("Draculea"))     return mResources[0];
+        if (aPlayer.equalsIgnoreCase("Lazy_ou"))     return mResources[0];
+        if (mSupporterListGold.contains(aPlayer))       return mResources[2];
         if (mSupporterListSilver.contains(aPlayer))     return mResources[1];
-        return null;
+        return mResources[2];
     }
 
     public void receiveRenderSpecialsEvent(RenderPlayerEvent.Specials.Pre aEvent) {
