@@ -6,6 +6,7 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import net.minecraft.util.StatCollector;
 
 @Mod(modid=MoegAddon.MOD_ID, name=MoegAddon.MOD_NAME, version=MoegAddon.VERSION)
 public class MoegAddon {
@@ -14,23 +15,31 @@ public class MoegAddon {
 
 	public static final String MOD_ID = "moegadd";
 	public static final String MOD_NAME = "MoegAddon";
-	public static final String VERSION = "1.06";
+	public static final String VERSION = "1.10";
+	public static final String RES_PATH = "moegadd:";
 
-	 	@EventHandler
-	    public void preInit(FMLPreInitializationEvent event)
+
+	@EventHandler
+	public void preInit(FMLPreInitializationEvent event)
 	    {
 	        proxy.preInit(event);
 	    }
 
-	    @EventHandler
-	    public void init(FMLInitializationEvent event)
-	    {
-	        proxy.init(event);
-	    }
+	@EventHandler
+	public void init(FMLInitializationEvent event)
+	{
+	    proxy.init(event);
+	}
 
-	    @EventHandler
-	    public void postInit(FMLPostInitializationEvent event)
+	@EventHandler
+	public void postInit(FMLPostInitializationEvent event)
 	    {
 	        proxy.postInit(event);
 	    }
+
+	public static String translate(String s)
+	{
+		return StatCollector.translateToLocal(s);
+	}
+
 }
