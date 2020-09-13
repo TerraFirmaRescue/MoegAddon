@@ -39,7 +39,7 @@ public class PlayerModelRenderer extends RenderPlayer {
         if (aPlayer.equalsIgnoreCase("Lazy_ou"))     return mResources[0];
         if (mSupporterListGold.contains(aPlayer))       return mResources[2];
         if (mSupporterListSilver.contains(aPlayer))     return mResources[1];
-        return mResources[2];
+        return null;
     }
 
     public void receiveRenderSpecialsEvent(RenderPlayerEvent.Specials.Pre aEvent) {

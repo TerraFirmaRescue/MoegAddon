@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import net.minecraft.util.StatCollector;
 
-@Mod(modid=MoegAddon.MOD_ID, name=MoegAddon.MOD_NAME, version=MoegAddon.VERSION)
+@Mod(modid=MoegAddon.MOD_ID, name=MoegAddon.MOD_NAME, version=MoegAddon.VERSION, dependencies="required-after:gregapi_post")
 public class MoegAddon {
 	@SidedProxy(clientSide = "moegaddon.ClientProxy", serverSide = "moegaddon.CommonProxy")
 	public static CommonProxy proxy;
