@@ -13,6 +13,8 @@ import moegaddon.loaders.BlockLoader;
 import moegaddon.loaders.FluidLoader;
 import moegaddon.loaders.ItemLoader;
 import moegaddon.loaders.TabLoader;
+import net.minecraft.client.Minecraft;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import org.apache.logging.log4j.LogManager;
@@ -48,7 +50,7 @@ public class CommonProxy
             LOGGER.info("TFR_Download_Thread: Downloaded Silver Supporter List!");
             LOGGER.info(mSupporterListSilver);
         } else try {
-            Scanner tScanner = new Scanner(getClass().getResourceAsStream("/supporterlist.txt"));
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/supporterlist.txt")).getInputStream());
             while (tScanner.hasNextLine()) mSupporterListSilver.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             LOGGER.warn("TFR_Download_Thread: Failed downloading Silver Supporter List, using interal List!");
@@ -60,7 +62,7 @@ public class CommonProxy
             LOGGER.info("TFR_Download_Thread: Downloaded Gold Supporter List!");
             LOGGER.info(mSupporterListGold);
         } else try {
-            Scanner tScanner = new Scanner(getClass().getResourceAsStream("/supporterlistgold.txt"));
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/supporterlistgold.txt")).getInputStream());
             while (tScanner.hasNextLine()) mSupporterListGold.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             LOGGER.warn("TFR_Download_Thread: Failed downloading Gold Supporter List, using interal List!");
