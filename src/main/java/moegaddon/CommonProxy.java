@@ -9,10 +9,12 @@ import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import gregapi.util.UT;
 import gregtech.tileentity.misc.MultiTileEntityCertificate;
 import moegaddon.code.HashSetNoNulls;
+import moegaddon.config.MoegAddonConfig;
 import moegaddon.loaders.BlockLoader;
 import moegaddon.loaders.FluidLoader;
 import moegaddon.loaders.ItemLoader;
 import moegaddon.loaders.TabLoader;
+import moegaddon.login.LoginHandler;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,12 +22,11 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
 import java.net.URL;
 import java.util.Scanner;
 
 import static gregapi.data.CS.F;
+import static moegaddon.MoegAddon.MOD_ID;
 import static moegaddon.MoegAddon.MOD_NAME;
 
 public class CommonProxy
@@ -37,7 +38,7 @@ public class CommonProxy
     public final HashSetNoNulls<String> mSupporterListGold = new HashSetNoNulls<>();
 
     public static final Logger LOGGER = LogManager.getFormatterLogger(MOD_NAME);
-
+    public static MoegAddonConfig MoegAddonConfig;
 
     public CommonProxy() {
         MinecraftForge.EVENT_BUS         .register(this);
@@ -45,6 +46,12 @@ public class CommonProxy
     }
 
 	public void preInit(FMLPreInitializationEvent event) {
+
+        // Init MoegAddon config file. Create it if it's not there
+        MoegAddonConfig = new MoegAddonConfig(event.getModConfigurationDirectory(), "MoegAddon", MOD_ID);
+        if (!MoegAddonConfig.LoadConfig()) {
+            LOGGER.error(String.format("%s could not load its config file. Things are going to be weird!", MOD_ID));
+        }
 
         if (downloadSupporterListSilverFromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded Silver Supporter List!");
@@ -69,6 +76,11 @@ public class CommonProxy
             LOGGER.info("Gold: " + mSupporterListGold);
 
         } catch(Throwable e) {e.printStackTrace();}
+
+        if (MoegAddonConfig.ModLoginMessage_Enabled)
+        {
+            FMLCommonHandler.instance().bus().register(new LoginHandler());
+        }
 
         TabLoader TabLoader=new TabLoader();
         ItemLoader ItemLoader =new ItemLoader();
