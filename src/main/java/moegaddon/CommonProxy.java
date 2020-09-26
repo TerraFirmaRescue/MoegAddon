@@ -31,11 +31,22 @@ import static moegaddon.MoegAddon.MOD_NAME;
 
 public class CommonProxy
 {
-    public String SILVER_URL = "https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/supporterlist.txt";
-    public String GOLD_URL = "https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/supporterlistgold.txt";
+    public String SILVER_URL = "https://info.teammoeg.com/supportlistgold.txt";
+    public String GOLD_URL = "https://info.teammoeg.com/supportlist.txt";
+    public String MEC1_URL = "https://info.teammoeg.com/mec1.txt";
+    public String MEC2_URL = "https://info.teammoeg.com/mec2.txt";
+    public String MEC3_URL = "https://info.teammoeg.com/mec3.txt";
+    public String MEC4_URL = "https://info.teammoeg.com/mec4.txt";
+    public String MEC5_URL = "https://info.teammoeg.com/mec5.txt";
 
     public final HashSetNoNulls<String> mSupporterListSilver = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListGold = new HashSetNoNulls<>();
+    public final HashSetNoNulls<String> mSupporterListMEC1 = new HashSetNoNulls<>();
+    public final HashSetNoNulls<String> mSupporterListMEC2 = new HashSetNoNulls<>();
+    public final HashSetNoNulls<String> mSupporterListMEC3 = new HashSetNoNulls<>();
+    public final HashSetNoNulls<String> mSupporterListMEC4 = new HashSetNoNulls<>();
+    public final HashSetNoNulls<String> mSupporterListMEC5 = new HashSetNoNulls<>();
+
 
     public static final Logger LOGGER = LogManager.getFormatterLogger(MOD_NAME);
     public static MoegAddonConfig MoegAddonConfig;
@@ -52,6 +63,8 @@ public class CommonProxy
         if (!MoegAddonConfig.LoadConfig()) {
             LOGGER.error(String.format("%s could not load its config file. Things are going to be weird!", MOD_ID));
         }
+
+        // Init supporterlist stuff
 
         if (downloadSupporterListSilverFromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded Silver Supporter List!");
@@ -77,10 +90,74 @@ public class CommonProxy
 
         } catch(Throwable e) {e.printStackTrace();}
 
+        if (downloadSupporterListMEC1FromMain()) {
+            LOGGER.info("TFR_Download_Thread: Downloaded MEC1 Supporter List!");
+            LOGGER.info(mSupporterListMEC1);
+        } else try {
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/mec1.txt")).getInputStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC1.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            LOGGER.warn("TFR_Download_Thread: Failed downloading MEC1 Supporter List, using interal List!");
+            LOGGER.info("MEC1: " + mSupporterListMEC1);
+
+        } catch(Throwable e) {e.printStackTrace();}
+
+        if (downloadSupporterListMEC2FromMain()) {
+            LOGGER.info("TFR_Download_Thread: Downloaded MEC2 Supporter List!");
+            LOGGER.info(mSupporterListMEC2);
+        } else try {
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/mec2.txt")).getInputStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC2.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            LOGGER.warn("TFR_Download_Thread: Failed downloading MEC2 Supporter List, using interal List!");
+            LOGGER.info("MEC2: " + mSupporterListMEC2);
+
+        } catch(Throwable e) {e.printStackTrace();}
+
+        if (downloadSupporterListMEC3FromMain()) {
+            LOGGER.info("TFR_Download_Thread: Downloaded MEC3 Supporter List!");
+            LOGGER.info(mSupporterListMEC3);
+        } else try {
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/mec3.txt")).getInputStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC3.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            LOGGER.warn("TFR_Download_Thread: Failed downloading MEC3 Supporter List, using interal List!");
+            LOGGER.info("MEC3: " + mSupporterListMEC3);
+
+        } catch(Throwable e) {e.printStackTrace();}
+
+        if (downloadSupporterListMEC4FromMain()) {
+            LOGGER.info("TFR_Download_Thread: Downloaded MEC4 Supporter List!");
+            LOGGER.info(mSupporterListMEC4);
+        } else try {
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/mec4.txt")).getInputStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC4.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            LOGGER.warn("TFR_Download_Thread: Failed downloading MEC4 Supporter List, using interal List!");
+            LOGGER.info("MEC4: " + mSupporterListMEC4);
+
+        } catch(Throwable e) {e.printStackTrace();}
+
+        if (downloadSupporterListMEC5FromMain()) {
+            LOGGER.info("TFR_Download_Thread: Downloaded MEC5 Supporter List!");
+            LOGGER.info(mSupporterListMEC5);
+        } else try {
+            Scanner tScanner = new Scanner(Minecraft.getMinecraft().getResourceManager().getResource(new ResourceLocation("moegadd:texts/mec5.txt")).getInputStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC5.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            LOGGER.warn("TFR_Download_Thread: Failed downloading MEC5 Supporter List, using interal List!");
+            LOGGER.info("MEC5: " + mSupporterListMEC5);
+
+        } catch(Throwable e) {e.printStackTrace();}
+
+        // Login message
+
         if (MoegAddonConfig.ModLoginMessage_Enabled)
         {
             FMLCommonHandler.instance().bus().register(new LoginHandler());
         }
+
+        // Rest
 
         TabLoader TabLoader=new TabLoader();
         ItemLoader ItemLoader =new ItemLoader();
@@ -135,6 +212,56 @@ public class CommonProxy
             while (tScanner.hasNextLine()) mSupporterListGold.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListGold.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
+    }
+
+    public boolean downloadSupporterListMEC1FromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(MEC1_URL).openStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC1.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            return mSupporterListMEC1.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
+    }
+
+    public boolean downloadSupporterListMEC2FromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(MEC2_URL).openStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC2.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            return mSupporterListMEC2.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
+    }
+
+    public boolean downloadSupporterListMEC3FromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(MEC3_URL).openStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC3.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            return mSupporterListMEC3.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
+    }
+
+    public boolean downloadSupporterListMEC4FromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(MEC4_URL).openStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC4.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            return mSupporterListMEC4.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
+    }
+
+    public boolean downloadSupporterListMEC5FromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(MEC5_URL).openStream());
+            while (tScanner.hasNextLine()) mSupporterListMEC5.add(tScanner.nextLine().toLowerCase());
+            tScanner.close();
+            return mSupporterListMEC5.size() > 1;
         } catch(Throwable e) {e.printStackTrace();}
         return false;
     }

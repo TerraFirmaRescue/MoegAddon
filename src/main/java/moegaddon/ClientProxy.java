@@ -10,7 +10,7 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.common.MinecraftForge;
 
 public class ClientProxy extends CommonProxy{
-    private final PlayerModelRenderer mPlayerRenderer = new PlayerModelRenderer(mSupporterListSilver, mSupporterListGold);
+    private final PlayerModelRenderer mPlayerRenderer = new PlayerModelRenderer(mSupporterListSilver, mSupporterListGold, mSupporterListMEC1, mSupporterListMEC2, mSupporterListMEC3, mSupporterListMEC4, mSupporterListMEC5);
 
     public ClientProxy() {super();}
 
