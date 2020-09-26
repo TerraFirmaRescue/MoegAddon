@@ -38,7 +38,9 @@ public class CommonProxy
     public String MEC3_URL = "https://info.teammoeg.com/mec3.txt";
     public String MEC4_URL = "https://info.teammoeg.com/mec4.txt";
     public String MEC5_URL = "https://info.teammoeg.com/mec5.txt";
+    public String LATEST_MODPACK_VERSION_URL = "https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/config/MoegAddon/moegadd.cfg";
 
+    public final HashSetNoNulls<String> mMoegAddonConfig = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListSilver = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListGold = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListMEC1 = new HashSetNoNulls<>();
@@ -46,6 +48,8 @@ public class CommonProxy
     public final HashSetNoNulls<String> mSupporterListMEC3 = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListMEC4 = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListMEC5 = new HashSetNoNulls<>();
+
+    public static String LATEST_MODPACK_VERSION = "DEFAULT";
 
 
     public static final Logger LOGGER = LogManager.getFormatterLogger(MOD_NAME);
@@ -62,6 +66,21 @@ public class CommonProxy
         MoegAddonConfig = new MoegAddonConfig(event.getModConfigurationDirectory(), "MoegAddon", MOD_ID);
         if (!MoegAddonConfig.LoadConfig()) {
             LOGGER.error(String.format("%s could not load its config file. Things are going to be weird!", MOD_ID));
+        }
+
+        // Download latest version string from url
+        if (downloadLatestModpackVersionFromMain()) {
+            LOGGER.info("TFR_Download_Thread: Succeeded at checking modpack version!");
+            LOGGER.info(mMoegAddonConfig);
+            for (String mVersion : mMoegAddonConfig) {
+                if (mVersion.contains("S:ModPackVersion")) {
+                    LATEST_MODPACK_VERSION = mVersion.substring(17);
+                }
+            }
+            LOGGER.info("Latest Version: " + LATEST_MODPACK_VERSION);
+        } else {
+            LATEST_MODPACK_VERSION = "NULL";
+            LOGGER.warn("TFR_Download_Thread: Failed at checking modpack version!");
         }
 
         // Init supporterlist stuff
@@ -194,6 +213,16 @@ public class CommonProxy
                 }
             }
         }
+    }
+
+    public boolean downloadLatestModpackVersionFromMain() {
+        try {
+            Scanner tScanner = new Scanner(new URL(LATEST_MODPACK_VERSION_URL).openStream());
+            while (tScanner.hasNextLine()) mMoegAddonConfig.add(tScanner.nextLine().trim());
+            tScanner.close();
+            return mMoegAddonConfig.size() > 1;
+        } catch(Throwable e) {e.printStackTrace();}
+        return false;
     }
 
     public boolean downloadSupporterListSilverFromMain() {

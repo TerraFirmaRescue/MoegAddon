@@ -2,6 +2,7 @@ package moegaddon.login;
 
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
 import cpw.mods.fml.common.gameevent.PlayerEvent;
+import moegaddon.CommonProxy;
 import moegaddon.MoegAddon;
 import moegaddon.config.MoegAddonConfig;
 import net.minecraft.util.ChatComponentText;
@@ -23,5 +24,10 @@ public class LoginHandler {
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "    " + MoegAddon.translate("text.login.6")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "    " + MoegAddon.translate("text.login.7")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "==================================================" ));
+        if (!MoegAddonConfig.ModPackVersion.equalsIgnoreCase(CommonProxy.LATEST_MODPACK_VERSION)) {
+            if (CommonProxy.LATEST_MODPACK_VERSION.equalsIgnoreCase("NULL")) event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.9")));
+            else event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.8") + ": " + EnumChatFormatting.AQUA + EnumChatFormatting.BOLD + CommonProxy.LATEST_MODPACK_VERSION));
+            event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "==================================================" ));
+        }
     }
 }

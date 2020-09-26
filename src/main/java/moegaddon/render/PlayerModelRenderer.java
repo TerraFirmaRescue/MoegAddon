@@ -16,7 +16,7 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import static moegaddon.MoegAddon.RES_PATH;
 
 public class PlayerModelRenderer extends RenderPlayer {
-    private final ResourceLocation[] mResources = new ResourceLocation[] {new ResourceLocation(RES_PATH + "model/Dev.png"), new ResourceLocation(RES_PATH + "model/Silver.png"), new ResourceLocation(RES_PATH + "model/Gold.png")};
+    private final ResourceLocation[] mResources = new ResourceLocation[] {new ResourceLocation(RES_PATH + "model/Dev.png"), new ResourceLocation(RES_PATH + "model/Silver.png"), new ResourceLocation(RES_PATH + "model/Gold.png"), new ResourceLocation(RES_PATH + "model/MECSup1.png"), new ResourceLocation(RES_PATH + "model/MECSup2.png"), new ResourceLocation(RES_PATH + "model/MECSup3.png"), new ResourceLocation(RES_PATH + "model/MECSup4.png"), new ResourceLocation(RES_PATH + "model/MECSup5.png")};
     private final Collection<String> mSupporterListSilver, mSupporterListGold, mSupporterListMEC1, mSupporterListMEC2, mSupporterListMEC3, mSupporterListMEC4, mSupporterListMEC5;
 
     public PlayerModelRenderer(Collection<String> aSupporterListSilver, Collection<String> aSupporterListGold, Collection<String> aSupporterListMEC1, Collection<String> aSupporterListMEC2, Collection<String> aSupporterListMEC3, Collection<String> aSupporterListMEC4, Collection<String> aSupporterListMEC5) {
@@ -44,11 +44,11 @@ public class PlayerModelRenderer extends RenderPlayer {
         if (aPlayer.equalsIgnoreCase("Lazy_ou"))     return mResources[0];
         if (mSupporterListGold.contains(aPlayer))       return mResources[2];
         if (mSupporterListSilver.contains(aPlayer))     return mResources[1];
-        if (mSupporterListMEC1.contains(aPlayer))     return mResources[1];
-        if (mSupporterListMEC2.contains(aPlayer))     return mResources[1];
-        if (mSupporterListMEC3.contains(aPlayer))     return mResources[1];
-        if (mSupporterListMEC4.contains(aPlayer))     return mResources[1];
-        if (mSupporterListMEC5.contains(aPlayer))     return mResources[1];
+        if (mSupporterListMEC1.contains(aPlayer))     return mResources[3];
+        if (mSupporterListMEC2.contains(aPlayer))     return mResources[4];
+        if (mSupporterListMEC3.contains(aPlayer))     return mResources[5];
+        if (mSupporterListMEC4.contains(aPlayer))     return mResources[6];
+        if (mSupporterListMEC5.contains(aPlayer))     return mResources[7];
         return null;
     }
 
