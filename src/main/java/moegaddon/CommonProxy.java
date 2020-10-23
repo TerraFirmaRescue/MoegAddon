@@ -38,7 +38,7 @@ public class CommonProxy
     public String MEC3_URL = "https://info.teammoeg.com/mec3.txt";
     public String MEC4_URL = "https://info.teammoeg.com/mec4.txt";
     public String MEC5_URL = "https://info.teammoeg.com/mec5.txt";
-    public String LATEST_MODPACK_VERSION_URL = "https://raw.githubusercontent.com/TerraFirmaRescue/TerraFirma-Rescue-Modpack/master/config/MoegAddon/moegadd.cfg";
+    public String LATEST_MODPACK_VERSION_URL = "https://info.teammoeg.com/version.txt";
 
     public final HashSetNoNulls<String> mMoegAddonConfig = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListSilver = new HashSetNoNulls<>();
@@ -73,8 +73,8 @@ public class CommonProxy
             LOGGER.info("TFR_Download_Thread: Succeeded at checking modpack version!");
             LOGGER.info(mMoegAddonConfig);
             for (String mVersion : mMoegAddonConfig) {
-                if (mVersion.contains("S:ModPackVersion")) {
-                    LATEST_MODPACK_VERSION = mVersion.substring(17);
+                if (mVersion.startsWith("tfr")) {
+                    LATEST_MODPACK_VERSION = mVersion.substring(4);
                 }
             }
             LOGGER.info("Latest Version: " + LATEST_MODPACK_VERSION);

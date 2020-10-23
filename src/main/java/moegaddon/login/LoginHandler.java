@@ -14,7 +14,7 @@ public class LoginHandler {
     @SubscribeEvent
     public void onPlayerLogin(PlayerEvent.PlayerLoggedInEvent event)
     {
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "=================================================" ));
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   - - - - -" ));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.0") + " " + EnumChatFormatting.AQUA + EnumChatFormatting.BOLD + MoegAddonConfig.ModPackVersion));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN +  "    " + MoegAddon.translate("text.login.1")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BLUE + "    " + MoegAddon.translate("text.login.2")));
@@ -23,11 +23,14 @@ public class LoginHandler {
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.WHITE + "    " + MoegAddon.translate("text.login.5")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "    " + MoegAddon.translate("text.login.6")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.YELLOW + "    " + MoegAddon.translate("text.login.7")));
-        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "==================================================" ));
         if (!MoegAddonConfig.ModPackVersion.equalsIgnoreCase(CommonProxy.LATEST_MODPACK_VERSION)) {
-            if (CommonProxy.LATEST_MODPACK_VERSION.equalsIgnoreCase("NULL")) event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.9")));
-            else event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.8") + ": " + EnumChatFormatting.AQUA + EnumChatFormatting.BOLD + CommonProxy.LATEST_MODPACK_VERSION));
-            event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "==================================================" ));
+            if (CommonProxy.LATEST_MODPACK_VERSION.equalsIgnoreCase("NULL")){
+                event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_GRAY +  "    " + MoegAddon.translate("text.login.9")));
+            }
+            else {
+                event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "    " + MoegAddon.translate("text.login.8") + ": " + EnumChatFormatting.GREEN + EnumChatFormatting.BOLD + CommonProxy.LATEST_MODPACK_VERSION));
+            }
         }
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   - - - - -" ));
     }
 }
