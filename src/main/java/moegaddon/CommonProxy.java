@@ -220,7 +220,7 @@ public class CommonProxy
             Scanner tScanner = new Scanner(new URL(LATEST_MODPACK_VERSION_URL).openStream());
             while (tScanner.hasNextLine()) mMoegAddonConfig.add(tScanner.nextLine().trim());
             tScanner.close();
-            return mMoegAddonConfig.size() > 1;
+            return mMoegAddonConfig.size() > 0;
         } catch(Throwable e) {e.printStackTrace();}
         return false;
     }

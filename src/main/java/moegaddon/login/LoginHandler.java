@@ -28,7 +28,8 @@ public class LoginHandler {
                 event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.DARK_GRAY +  "    " + MoegAddon.translate("text.login.9")));
             }
             else {
-                event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "    " + MoegAddon.translate("text.login.8") + ": " + EnumChatFormatting.GREEN + EnumChatFormatting.BOLD + CommonProxy.LATEST_MODPACK_VERSION));
+                event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.8") + ": " + EnumChatFormatting.GREEN + EnumChatFormatting.BOLD + CommonProxy.LATEST_MODPACK_VERSION));
+                event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.10")));
             }
         }
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   - - - - -" ));
