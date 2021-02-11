@@ -1,0 +1,52 @@
+# eclipse
+bin
+*.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea/
+
+# gradle
+.gradle/
+build/
+out/
+classes/
+
+# vscode
+
+.settings/
+.vscode/
+bin/
+
+# mc
+
+eclipse/
+run/
+logs/
+remappedSrc/
+
+# apple
+
+**/.DS_Store
+
+# Files from Forge MDK
+forge*changelog.txt
+
+# project
+
+private.properties
+/TODOLIST_YS
+/mi/
+/elt-assets/
+/minecraftresources/
+/MoegAddon.iml
+/MoegAddon.ipr
+/MoegAddon.iws
+/idea/

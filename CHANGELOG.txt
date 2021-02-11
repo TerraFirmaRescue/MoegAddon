@@ -1,4 +1,8 @@
 Changelog for MoegAddon 1.7.10
+1.15
+Added Config for URLs
+Added timeout time for URLs
+
 1.14
 Added BQ update notification
 
