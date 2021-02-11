@@ -1,6 +1,8 @@
 Changelog for MoegAddon 1.7.10
+1.14
+Added BQ update notification
 
-1。05
+1.05
 Added more bio stuff
 Added More Platinum Ore
 

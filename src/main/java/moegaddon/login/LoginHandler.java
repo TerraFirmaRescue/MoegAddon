@@ -32,6 +32,7 @@ public class LoginHandler {
                 event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   " + MoegAddon.translate("text.login.10")));
             }
         }
+        event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.GREEN +  "    " + MoegAddon.translate("text.login.11")));
         event.player.addChatMessage(new ChatComponentText(EnumChatFormatting.BOLD +  "   - - - - -" ));
     }
 }

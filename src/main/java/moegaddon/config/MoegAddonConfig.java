@@ -19,7 +19,7 @@ public class MoegAddonConfig extends ConfigManager
     protected void PreInit()
     {
         ModLoginMessage_Enabled = true;
-        ModPackVersion = "3.4.4.0";
+        ModPackVersion = "3.6.0.0";
     }
 
     @Override

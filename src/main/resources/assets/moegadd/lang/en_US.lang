@@ -261,3 +261,4 @@ text.login.7=See our Wiki: https://wiki.teammoeg.com
 text.login.8=New Version Available
 text.login.9=Internet Issue - Modpack Version Check Failed
 text.login.10=Download: https://www.curseforge.com/minecraft/modpacks/terrafirma-rescue
+text.login.11=After updating Modpack, use command "/bq_admin default load" to update Quests!
