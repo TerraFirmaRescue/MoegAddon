@@ -34,7 +34,7 @@ public class CommonProxy {
     public static final Logger LOGGER = LogManager.getFormatterLogger(MOD_NAME);
     public static MoegAddonConfig MOD_CONFIG;
     public static String LATEST_MODPACK_VERSION = "DEFAULT";
-    
+
     public final HashSetNoNulls<String> mModpackVersionList = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListSilver = new HashSetNoNulls<>();
     public final HashSetNoNulls<String> mSupporterListGold = new HashSetNoNulls<>();
@@ -45,11 +45,11 @@ public class CommonProxy {
     public final HashSetNoNulls<String> mSupporterListMEC5 = new HashSetNoNulls<>();
 
     public CommonProxy() {
-        MinecraftForge.EVENT_BUS         .register(this);
+        MinecraftForge.EVENT_BUS.register(this);
         FMLCommonHandler.instance().bus().register(this);
     }
 
-	public void preInit(FMLPreInitializationEvent event) {
+    public void preInit(FMLPreInitializationEvent event) {
 
         // Init MoegAddon config file. Create it if it's not there
         MOD_CONFIG = new MoegAddonConfig(event.getModConfigurationDirectory(), "MoegAddon", MOD_ID);
@@ -93,7 +93,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading Silver Supporter List, using interal List!");
             LOGGER.info("Silver: " + mSupporterListSilver);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListGoldFromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded Gold Supporter List!");
@@ -105,7 +107,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading Gold Supporter List, using interal List!");
             LOGGER.info("Gold: " + mSupporterListGold);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListMEC1FromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded MEC1 Supporter List!");
@@ -117,7 +121,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading MEC1 Supporter List, using interal List!");
             LOGGER.info("MEC1: " + mSupporterListMEC1);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListMEC2FromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded MEC2 Supporter List!");
@@ -129,7 +135,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading MEC2 Supporter List, using interal List!");
             LOGGER.info("MEC2: " + mSupporterListMEC2);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListMEC3FromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded MEC3 Supporter List!");
@@ -141,7 +149,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading MEC3 Supporter List, using interal List!");
             LOGGER.info("MEC3: " + mSupporterListMEC3);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListMEC4FromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded MEC4 Supporter List!");
@@ -153,7 +163,9 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading MEC4 Supporter List, using interal List!");
             LOGGER.info("MEC4: " + mSupporterListMEC4);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         if (downloadSupporterListMEC5FromMain()) {
             LOGGER.info("TFR_Download_Thread: Downloaded MEC5 Supporter List!");
@@ -165,30 +177,29 @@ public class CommonProxy {
             LOGGER.warn("TFR_Download_Thread: Failed downloading MEC5 Supporter List, using interal List!");
             LOGGER.info("MEC5: " + mSupporterListMEC5);
 
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
 
         // Login message
 
-        if (MOD_CONFIG.ModLoginMessage_Enabled)
-        {
+        if (MOD_CONFIG.ModLoginMessage_Enabled) {
             FMLCommonHandler.instance().bus().register(new LoginHandler());
         }
 
         // Rest
 
-        TabLoader TabLoader=new TabLoader();
-        ItemLoader ItemLoader =new ItemLoader();
+        TabLoader TabLoader = new TabLoader();
+        ItemLoader ItemLoader = new ItemLoader();
         BlockLoader BlockLoader = new BlockLoader();
         FluidLoader FluidLoader = new FluidLoader();
     }
 
-    public void init(FMLInitializationEvent event)
-    {
+    public void init(FMLInitializationEvent event) {
 
     }
 
-    public void postInit(FMLPostInitializationEvent event)
-    {
+    public void postInit(FMLPostInitializationEvent event) {
 
     }
 
@@ -223,7 +234,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mModpackVersionList.add(tScanner.nextLine().trim());
             tScanner.close();
             return mModpackVersionList.size() > 0;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -237,7 +250,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListSilver.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListSilver.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -251,7 +266,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListGold.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListGold.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -265,7 +282,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListMEC1.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListMEC1.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -279,7 +298,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListMEC2.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListMEC2.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -293,7 +314,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListMEC3.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListMEC3.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -307,7 +330,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListMEC4.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListMEC4.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 
@@ -321,7 +346,9 @@ public class CommonProxy {
             while (tScanner.hasNextLine()) mSupporterListMEC5.add(tScanner.nextLine().toLowerCase());
             tScanner.close();
             return mSupporterListMEC5.size() > 1;
-        } catch(Throwable e) {e.printStackTrace();}
+        } catch (Throwable e) {
+            e.printStackTrace();
+        }
         return false;
     }
 }

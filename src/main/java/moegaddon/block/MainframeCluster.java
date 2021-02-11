@@ -1,13 +1,13 @@
 package moegaddon.block;
 
-import moegaddon.loaders.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
+import moegaddon.loaders.TabLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.util.IIcon;
 
-public class MainframeCluster extends Block{
+public class MainframeCluster extends Block {
 
     public MainframeCluster(String name, String texturePath) {
         super(Material.iron);

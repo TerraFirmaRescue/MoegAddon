@@ -1,14 +1,14 @@
 package moegaddon.fluid.fluids;
 
-        import cpw.mods.fml.relauncher.Side;
-        import cpw.mods.fml.relauncher.SideOnly;
-        import moegaddon.fluid.fluidBlocks.*;
-        import net.minecraft.util.IIcon;
-        import net.minecraftforge.fluids.Fluid;
-        import net.minecraftforge.fluids.FluidRegistry;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import moegaddon.fluid.fluidBlocks.BLOCK_DifferentiationPromotingProteinNeuron;
+import net.minecraft.util.IIcon;
+import net.minecraftforge.fluids.Fluid;
+import net.minecraftforge.fluids.FluidRegistry;
 
 public class DifferentiationPromotingProteinNeuron extends Fluid {
-    public DifferentiationPromotingProteinNeuron (String name){
+    public DifferentiationPromotingProteinNeuron(String name) {
         super(name);
         this.setUnlocalizedName(name);
         this.setDensity(1000);
@@ -17,6 +17,7 @@ public class DifferentiationPromotingProteinNeuron extends Fluid {
         this.setTemperature(300);
         FluidRegistry.registerFluid(this);
     }
+
     @SideOnly(Side.CLIENT)
 
     public IIcon getStillIcon() {

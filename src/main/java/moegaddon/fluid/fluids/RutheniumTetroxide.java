@@ -2,13 +2,13 @@ package moegaddon.fluid.fluids;
 
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import moegaddon.fluid.fluidBlocks.*;
+import moegaddon.fluid.fluidBlocks.BLOCK_RutheniumTetroxide;
 import net.minecraft.util.IIcon;
 import net.minecraftforge.fluids.Fluid;
 import net.minecraftforge.fluids.FluidRegistry;
 
 public class RutheniumTetroxide extends Fluid {
-    public RutheniumTetroxide (String name){
+    public RutheniumTetroxide(String name) {
         super(name);
         this.setUnlocalizedName(name);
         this.setDensity(1000);
@@ -17,6 +17,7 @@ public class RutheniumTetroxide extends Fluid {
         this.setTemperature(300);
         FluidRegistry.registerFluid(this);
     }
+
     @SideOnly(Side.CLIENT)
 
     public IIcon getStillIcon() {

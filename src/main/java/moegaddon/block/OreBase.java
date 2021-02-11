@@ -1,7 +1,7 @@
 package moegaddon.block;
 
-import moegaddon.loaders.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
+import moegaddon.loaders.TabLoader;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 

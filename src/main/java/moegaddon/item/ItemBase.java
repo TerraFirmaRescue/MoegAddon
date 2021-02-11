@@ -1,7 +1,7 @@
 package moegaddon.item;
 
-import moegaddon.loaders.TabLoader;
 import cpw.mods.fml.common.registry.GameRegistry;
+import moegaddon.loaders.TabLoader;
 import net.minecraft.item.Item;
 
 public class ItemBase extends Item {
